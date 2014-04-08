@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/Users/jeremy/Documents/GitHub/at-tami/Little-Wire.J+N.brd
 
-Start at      : 20:27:02 (3/25/2014)
-End at        : 20:27:02 (3/25/2014)
-Elapsed time  : 00:00:00
+Start at      : 15:52:59 (4/8/2014)
+End at        : 15:55:50 (4/8/2014)
+Elapsed time  : 00:02:51
 
-Signals       :    17   RoutingGrid: 7 mil  Layers: 2
-Connections   :    40   predefined:  38 ( 5 Vias )
+Signals       :    17   RoutingGrid: 1.9685 mil  Layers: 2
+Connections   :    54   predefined:  39 ( 5 Vias )
 
-Router memory :   276600
+Router memory :   3288796
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         0         0         0         0         0
-max. Total        :         0         0         0         0         0         0
+Time per pass     :  00:00:00  00:00:46  00:00:43  00:00:40  00:00:42
+Number of Ripups  :         0         0         0         0         0
+max. Level        :         0         0         0         0         0
+max. Total        :         0         0         0         0         0
 
-Routed            :         0         1         1         1         1         1
-Vias              :         0         7         1         1         1         1
-Resolution        :    95.0 %    97.5 %    97.5 %    97.5 %    97.5 %    97.5 %
+Routed            :         0        15        15        15        15
+Vias              :         0         0         0         0         0
+Resolution        :    72.2 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 97.4% finished. Polygons may have fallen apart.
+Final             : 100.0% finished

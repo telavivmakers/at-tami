@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -781,6 +781,11 @@ design rules under a new name.</description>
 </polygon>
 <wire x1="7.4676" y1="18.8468" x2="7.4600125" y2="18.8468" width="0.254" layer="16"/>
 <wire x1="6.8" y1="14.8" x2="6.775646875" y2="14.824353125" width="0.254" layer="16"/>
+<wire x1="32.45" y1="16.45" x2="32.45191875" y2="16.451915625" width="0.254" layer="16"/>
+<wire x1="28.1" y1="11.95" x2="28.08308125" y2="11.933078125" width="0.254" layer="16"/>
+<wire x1="17.75" y1="13" x2="17.77" y2="13" width="0.254" layer="16"/>
+<wire x1="12.25" y1="3.4" x2="12.25" y2="3.414415625" width="0.254" layer="16"/>
+<wire x1="55.7" y1="9.3" x2="54.5" y2="9.3" width="0.254" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="UC" pad="2"/>
@@ -868,12 +873,13 @@ design rules under a new name.</description>
 <wire x1="22.9362" y1="17.78" x2="22.5806" y2="17.9578" width="0.254" layer="16"/>
 <wire x1="23.8252" y1="17.78" x2="22.9362" y2="17.78" width="0.254" layer="16"/>
 <wire x1="27.0256" y1="16.7132" x2="23.8252" y2="17.78" width="0.254" layer="16"/>
-<wire x1="31.2928" y1="16.7132" x2="27.0256" y2="16.7132" width="0.254" layer="16"/>
-<wire x1="31.2928" y1="16.7132" x2="31.8262" y2="17.0688" width="0.254" layer="16"/>
-<wire x1="31.6484" y1="17.2466" x2="31.2928" y2="16.7132" width="0.254" layer="16"/>
+<wire x1="31.6484" y1="17.2466" x2="31.396615625" y2="16.868921875" width="0.254" layer="16"/>
+<wire x1="31.396615625" y1="16.868921875" x2="31.2928" y2="16.7132" width="0.254" layer="16"/>
 <wire x1="31.6484" y1="17.9578" x2="31.6484" y2="17.2466" width="0.254" layer="16"/>
 <wire x1="22.5806" y1="17.9578" x2="22.54" y2="18" width="0.254" layer="16"/>
 <wire x1="31.6484" y1="17.9578" x2="31.54" y2="18" width="0.254" layer="16"/>
+<wire x1="27.0256" y1="16.7132" x2="31.396615625" y2="16.7132" width="0.254" layer="16"/>
+<wire x1="31.396615625" y1="16.7132" x2="31.396615625" y2="16.868921875" width="0.254" layer="16"/>
 </signal>
 <signal name="D+">
 <contactref element="X1" pad="D+"/>
