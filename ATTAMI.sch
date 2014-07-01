@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2182,81 +2182,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
-<library name="yair_r">
-<packages>
-<package name="USB-MICRO-ALIEXPRESS">
-<smd name="VCC" x="-1.3" y="1.725" dx="0.4" dy="1.35" layer="1"/>
-<smd name="DM" x="-0.65" y="1.725" dx="0.4" dy="1.35" layer="1"/>
-<smd name="DP" x="0" y="1.725" dx="0.4" dy="1.35" layer="1"/>
-<smd name="ID" x="0.65" y="1.725" dx="0.4" dy="1.35" layer="1"/>
-<smd name="GND@1" x="1.3" y="1.725" dx="0.4" dy="1.35" layer="1"/>
-<smd name="GND@3" x="-3.95" y="-0.95" dx="1.9" dy="1.9" layer="1"/>
-<smd name="GND@2" x="3.95" y="-0.95" dx="1.9" dy="1.9" layer="1"/>
-<smd name="P$9" x="-1.2" y="-0.95" dx="1.9" dy="1.9" layer="1"/>
-<smd name="P$10" x="1.2" y="-0.95" dx="1.9" dy="1.9" layer="1"/>
-<wire x1="4.5" y1="-2.55" x2="-4.5" y2="-2.55" width="0.254" layer="21"/>
-<wire x1="-3.9" y1="-2.6" x2="-3.9" y2="2.1" width="0" layer="21"/>
-<wire x1="-3.9" y1="2.1" x2="3.9" y2="2.1" width="0" layer="21"/>
-<wire x1="3.9" y1="2.1" x2="3.9" y2="-2.6" width="0" layer="21"/>
-<text x="-4.5" y="2.8" size="0.6096" layer="21">&gt;Name</text>
-<text x="-4.4" y="-3.7" size="0.6096" layer="21">&gt;Value</text>
-</package>
-</packages>
-<symbols>
-<symbol name="MICRO-USB-5P">
-<pin name="VCC" x="10.16" y="5.08" length="short" rot="R180"/>
-<pin name="DM" x="10.16" y="2.54" length="short" rot="R180"/>
-<pin name="DP" x="10.16" y="0" length="short" rot="R180"/>
-<pin name="ID" x="10.16" y="-2.54" length="short" rot="R180"/>
-<pin name="GND@1" x="10.16" y="-5.08" length="short" rot="R180"/>
-<pin name="GND@2" x="-10.16" y="-1.27" length="short"/>
-<pin name="GND@3" x="-10.16" y="1.27" length="short"/>
-<wire x1="-6.35" y1="6.35" x2="-6.35" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-6.35" y1="-1.27" x2="-6.35" y2="-6.35" width="0.1524" layer="94"/>
-<wire x1="-6.35" y1="-6.35" x2="6.35" y2="-6.35" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="-6.35" x2="6.35" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="-5.08" x2="6.35" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="-2.54" x2="6.35" y2="0" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="0" x2="6.35" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="2.54" x2="6.35" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="5.08" x2="6.35" y2="6.35" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="6.35" x2="-6.35" y2="6.35" width="0.1524" layer="94"/>
-<text x="-6.35" y="6.35" size="1.27" layer="95" ratio="10">&gt;NAME</text>
-<text x="0" y="6.35" size="1.27" layer="95" ratio="10">&gt;VALUE</text>
-<wire x1="-7.62" y1="1.27" x2="-6.35" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-1.27" x2="-6.35" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="-5.08" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="2.54" x2="7.62" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="6.35" y1="5.08" x2="8.89" y2="5.08" width="0.1524" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MICRO-USB_ALIEXPRESS">
-<gates>
-<gate name="G$1" symbol="MICRO-USB-5P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="USB-MICRO-ALIEXPRESS">
-<connects>
-<connect gate="G$1" pin="DM" pad="DM"/>
-<connect gate="G$1" pin="DP" pad="DP"/>
-<connect gate="G$1" pin="GND@1" pad="GND@1"/>
-<connect gate="G$1" pin="GND@2" pad="GND@2"/>
-<connect gate="G$1" pin="GND@3" pad="GND@3"/>
-<connect gate="G$1" pin="ID" pad="ID"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="frames">
 <description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
 <packages>
@@ -2303,6 +2228,85 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Molex-47346-0001">
+<packages>
+<package name="MOLEX_47346-0001">
+<description>MICRO USB R/A-473460001</description>
+<smd name="1" x="-1.3" y="0" dx="1.38" dy="0.45" layer="1" rot="R90"/>
+<smd name="2" x="-0.65" y="0" dx="1.38" dy="0.45" layer="1" rot="R90"/>
+<smd name="3" x="0" y="0" dx="1.38" dy="0.45" layer="1" rot="R90"/>
+<smd name="4" x="0.65" y="0" dx="1.38" dy="0.45" layer="1" rot="R90"/>
+<smd name="5" x="1.3" y="0" dx="1.38" dy="0.45" layer="1" rot="R90"/>
+<smd name="M1" x="-2.4625" y="-0.36" dx="1.475" dy="2.1" layer="1" rot="R180"/>
+<smd name="M2" x="2.4625" y="-0.36" dx="1.475" dy="2.1" layer="1" rot="R180"/>
+<smd name="M3" x="-2.9125" y="-2.66" dx="2.375" dy="1.9" layer="1"/>
+<smd name="M6" x="2.9125" y="-2.66" dx="2.375" dy="1.9" layer="1"/>
+<smd name="M4" x="-0.82" y="-2.66" dx="1.175" dy="1.9" layer="1"/>
+<smd name="M5" x="0.85" y="-2.66" dx="1.175" dy="1.9" layer="1"/>
+<wire x1="-4.5" y1="-4.11" x2="5" y2="-4.11" width="0.1" layer="49"/>
+<wire x1="-4.5" y1="-4.81" x2="5" y2="-4.81" width="0.1" layer="49"/>
+<wire x1="-3.75" y1="0.65" x2="-3.75" y2="-4.78" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="-4.78" x2="3.75" y2="-4.78" width="0.127" layer="51"/>
+<wire x1="3.75" y1="-4.78" x2="3.75" y2="0.65" width="0.127" layer="51"/>
+<wire x1="3.75" y1="0.65" x2="-3.75" y2="0.65" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="0.65" x2="-3.75" y2="0.65" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="0.65" x2="-3.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="3.5" y1="0.65" x2="3.75" y2="0.65" width="0.127" layer="21"/>
+<wire x1="3.75" y1="0.65" x2="3.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-3.9" x2="-3.75" y2="-4.78" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-4.78" x2="3.75" y2="-4.78" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-4.78" x2="3.75" y2="-3.9" width="0.127" layer="21"/>
+<text x="5.3" y="-4.1" size="0.5" layer="49">PCB Front Edge</text>
+<text x="5.1" y="-4.8" size="0.5" layer="49">Conn. Front Interface</text>
+<text x="-2.8" y="1.5" size="2.0828" layer="25" ratio="10">&gt;Name</text>
+<text x="-3.2" y="-7.6" size="2.0828" layer="27" ratio="10">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="47346-0001">
+<description>MICRO USB R/A-473460001</description>
+<pin name="1" x="-10.16" y="5.08" length="middle" direction="in"/>
+<pin name="2" x="-10.16" y="2.54" length="middle" direction="in"/>
+<pin name="3" x="-10.16" y="0" length="middle" direction="in"/>
+<pin name="4" x="-10.16" y="-2.54" length="middle" direction="in"/>
+<pin name="5" x="-10.16" y="-5.08" length="middle" direction="in"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="2.54" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="-5.08" y2="10.16" width="0.4064" layer="94"/>
+<text x="-5.08" y="12.7" size="2.032" layer="95" ratio="10">&gt;Name</text>
+<text x="-5.08" y="-15.24" size="2.0828" layer="96" ratio="10">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="47346-0001" prefix="J" uservalue="yes">
+<description>CONN RCPT 5POS MICRO USB R/A  SMD</description>
+<gates>
+<gate name="G$1" symbol="47346-0001" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOLEX_47346-0001">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="47346-0001" constant="no"/>
+<attribute name="OC_FARNELL" value="1568026" constant="no"/>
+<attribute name="OC_NEWARK" value="47M0505" constant="no"/>
+<attribute name="PACKAGE" value="5 POS MICRO USB R/A" constant="no"/>
+<attribute name="SUPPLIER" value="MOLEX" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2336,13 +2340,13 @@ DIN A4, landscape with location and doc. field</description>
 <part name="U1" library="SparkFun" deviceset="V_REG_LDO" device="SMD" value="MIC5225"/>
 <part name="U$1" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.0" value="MOUNTINGHOLE2.0"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="-SMD-1101NE"/>
-<part name="J2" library="yair_r" deviceset="MICRO-USB_ALIEXPRESS" device=""/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$2" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.0" value="MOUNTINGHOLE2.0"/>
 <part name="J1" library="dp_devices" deviceset="CON_HEADER_1X02" device="-PTH"/>
 <part name="J3" library="dp_devices" deviceset="CON_HEADER_1X02" device="-PTH"/>
 <part name="J4" library="dp_devices" deviceset="CON_HEADER_1X06" device="-PTH"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
+<part name="J5" library="Molex-47346-0001" deviceset="47346-0001" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2436,21 +2440,21 @@ LICENSE: CERN OHL 1.7</text>
 <instance part="S1" gate="G$1" x="190.5" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="187.96" y="124.46" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="J2" gate="G$1" x="48.26" y="104.14" smashed="yes">
-<attribute name="NAME" x="42.164" y="111.76" size="1.778" layer="95" ratio="10"/>
-<attribute name="VALUE" x="33.02" y="92.71" size="1.27" layer="95" ratio="10"/>
-</instance>
-<instance part="GND4" gate="1" x="58.42" y="93.98"/>
+<instance part="GND4" gate="1" x="91.44" y="93.98"/>
 <instance part="U$2" gate="G$1" x="142.24" y="162.56"/>
 <instance part="J1" gate="J" x="33.02" y="144.78" rot="MR0"/>
 <instance part="J3" gate="J" x="83.82" y="162.56" rot="MR0"/>
 <instance part="J4" gate="G$1" x="215.9" y="139.7"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="J5" gate="G$1" x="81.28" y="104.14" smashed="yes" rot="MR0">
+<attribute name="NAME" x="82.042" y="111.506" size="2.032" layer="95" ratio="10" rot="MR0"/>
+<attribute name="VALUE" x="86.36" y="88.9" size="2.0828" layer="96" ratio="10" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$10" class="0">
+<net name="DM" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
@@ -2459,8 +2463,8 @@ LICENSE: CERN OHL 1.7</text>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="96.52" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="D2" gate="LED" pin="A"/>
-<pinref part="J2" gate="G$1" pin="DM"/>
-<wire x1="116.84" y1="106.68" x2="58.42" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="106.68" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2516,16 +2520,9 @@ LICENSE: CERN OHL 1.7</text>
 <wire x1="40.64" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="GND@1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="58.42" y1="99.06" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="GND@2"/>
-<pinref part="J2" gate="G$1" pin="GND@3"/>
-<wire x1="38.1" y1="102.87" x2="38.1" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="102.87" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
-<junction x="38.1" y="102.87"/>
-<junction x="58.42" y="96.52"/>
+<wire x1="91.44" y1="99.06" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2592,15 +2589,15 @@ LICENSE: CERN OHL 1.7</text>
 <junction x="45.72" y="144.78"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="DP" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="104.14" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="96.52" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
 <junction x="104.14" y="104.14"/>
 <pinref part="D1" gate="LED" pin="A"/>
-<pinref part="J2" gate="G$1" pin="DP"/>
-<wire x1="58.42" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -2648,10 +2645,10 @@ LICENSE: CERN OHL 1.7</text>
 </net>
 <net name="V-BUS" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="VCC"/>
 <pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="58.42" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="109.22" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
