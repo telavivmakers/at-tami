@@ -2161,7 +2161,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="17.69538125" y1="9.494140625" x2="17.683103125" y2="9.4818625" width="0.4064" layer="1"/>
 <wire x1="17.69538125" y1="11.109059375" x2="18.729059375" y2="11.109059375" width="0.4064" layer="1"/>
 <wire x1="18.729059375" y1="11.109059375" x2="21.59" y2="13.97" width="0.4064" layer="1"/>
-<wire x1="17.78" y1="7.62" x2="17.683103125" y2="9.4818625" width="0" layer="19" extent="1-1"/>
+<wire x1="17.683103125" y1="9.4818625" x2="18.923" y2="9.4818625" width="0.4064" layer="1"/>
+<wire x1="18.923" y1="9.4818625" x2="18.923" y2="7.62" width="0.4064" layer="1"/>
+<wire x1="18.923" y1="7.62" x2="17.683103125" y2="7.62" width="0.4064" layer="1"/>
+<wire x1="17.683103125" y1="7.62" x2="17.683103125" y2="7.5818625" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R4" pad="1"/>
