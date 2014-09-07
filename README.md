@@ -5,4 +5,4 @@ fork of littlewire AVR based Vusb dev board and various other efforts around the
 more at http://telavivmakers.org/index.php/ATtami<br>
 and here http://mcu.soup.io<br>
 <br>
-<img src="http://i.imgur.com/rSMAhMi.png" alt="ATtami board (ver 16)">
+<img src="http://i.imgur.com/pnYZfza.png" alt="ATtami board (ver 16)">
