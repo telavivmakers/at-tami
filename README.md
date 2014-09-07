@@ -1,4 +1,4 @@
-ATtami עָלֵקדוֹאִינו
+ATtami עָלֵקדוּאִינו
 =================
 
 fork of littlewire AVR based Vusb dev board and various other efforts around the ATtiny85 <br>
