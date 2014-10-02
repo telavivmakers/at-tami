@@ -2874,16 +2874,9 @@ LICENSE: CERN OHL 1.7</text>
 <wire x1="45.72" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="USB" gate="G$1" pin="GND@1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="USB" gate="G$1" pin="GND@1"/>
 <wire x1="63.5" y1="81.28" x2="63.5" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="USB" gate="G$1" pin="GND@2"/>
-<pinref part="USB" gate="G$1" pin="GND@3"/>
-<wire x1="43.18" y1="85.09" x2="43.18" y2="87.63" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="85.09" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="78.74" x2="63.5" y2="78.74" width="0.1524" layer="91"/>
-<junction x="43.18" y="85.09"/>
-<junction x="63.5" y="78.74"/>
 </segment>
 <segment>
 <pinref part="J1" gate="A" pin="1"/>
