@@ -678,42 +678,42 @@ LICENSE: CERN OHL 1.7</text>
 <wire x1="38.1" y1="144.78" x2="48.26" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="PB0" class="0">
 <segment>
 <pinref part="J1" gate="A" pin="2"/>
 <wire x1="231.14" y1="127" x2="218.44" y2="127" width="0.1524" layer="91"/>
 <label x="218.44" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="PB1" class="0">
 <segment>
 <pinref part="J1" gate="A" pin="3"/>
 <wire x1="231.14" y1="124.46" x2="218.44" y2="124.46" width="0.1524" layer="91"/>
 <label x="218.44" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="PB2" class="0">
 <segment>
 <pinref part="J1" gate="A" pin="4"/>
 <wire x1="231.14" y1="121.92" x2="218.44" y2="121.92" width="0.1524" layer="91"/>
 <label x="218.44" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="PB3" class="0">
 <segment>
 <pinref part="J1" gate="A" pin="5"/>
 <wire x1="218.44" y1="119.38" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
 <label x="218.44" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="PB4" class="0">
 <segment>
 <pinref part="J1" gate="A" pin="6"/>
 <wire x1="218.44" y1="116.84" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
 <label x="218.44" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="PB5" class="0">
 <segment>
 <pinref part="J1" gate="A" pin="7"/>
 <wire x1="218.44" y1="114.3" x2="231.14" y2="114.3" width="0.1524" layer="91"/>

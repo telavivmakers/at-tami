@@ -1171,22 +1171,22 @@ disable layers: tNames, bNames, tPlace, bPlace</text>
 <signal name="N$3">
 <contactref element="J2" pad="1"/>
 </signal>
-<signal name="N$1">
+<signal name="PB0">
 <contactref element="J1" pad="2"/>
 </signal>
-<signal name="N$4">
+<signal name="PB1">
 <contactref element="J1" pad="3"/>
 </signal>
-<signal name="N$5">
+<signal name="PB2">
 <contactref element="J1" pad="4"/>
 </signal>
-<signal name="N$6">
+<signal name="PB3">
 <contactref element="J1" pad="5"/>
 </signal>
-<signal name="N$7">
+<signal name="PB4">
 <contactref element="J1" pad="6"/>
 </signal>
-<signal name="N$8">
+<signal name="PB5">
 <contactref element="J1" pad="7"/>
 </signal>
 </signals>
