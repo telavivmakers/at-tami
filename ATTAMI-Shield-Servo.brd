@@ -1281,12 +1281,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 </polygon>
 <contactref element="J2" pad="2"/>
 <contactref element="J1" pad="1"/>
-<contactref element="JP2" pad="1"/>
-<contactref element="JP3" pad="2"/>
 <contactref element="POT" pad="P$3"/>
 <contactref element="IC1" pad="GND"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
+<contactref element="JP2" pad="2"/>
+<wire x1="14.097" y1="11.43" x2="21.59" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="15.24" x2="14.097" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="3.81" x2="14.097" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="12.573" x2="14.097" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="1.27" x2="13.97" y2="3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="21.59" x2="13.97" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="1.27" x2="6.35" y2="12.573" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="J3" pad="1"/>
@@ -1301,9 +1307,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </signal>
 <signal name="V_BAT">
 <contactref element="J2" pad="1"/>
-<contactref element="IC1" pad="IN"/>
 <contactref element="JP1" pad="3"/>
-<wire x1="16.51" y1="15.24" x2="20.32" y2="13.97" width="0.6096" layer="1"/>
 <wire x1="20.32" y1="13.97" x2="21.59" y2="13.97" width="0.6096" layer="1"/>
 <wire x1="21.59" y1="13.97" x2="19.05" y2="13.97" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="13.97" x2="13.97" y2="8.89" width="0.6096" layer="1"/>
@@ -1340,15 +1344,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="PB5(RESET)">
 <contactref element="J1" pad="7"/>
 </signal>
-<signal name="VM">
+<signal name="V_SERVO">
 <contactref element="JP1" pad="2"/>
-<contactref element="JP2" pad="2"/>
-<contactref element="JP3" pad="1"/>
-<wire x1="13.97" y1="3.81" x2="12.7" y2="3.81" width="0.6096" layer="1"/>
 <wire x1="12.7" y1="3.81" x2="10.16" y2="6.35" width="0.6096" layer="1"/>
-<wire x1="10.16" y1="6.35" x2="8.89" y2="6.35" width="0.6096" layer="1"/>
 <wire x1="10.16" y1="6.35" x2="10.16" y2="7.62" width="0.6096" layer="1"/>
 <wire x1="10.16" y1="7.62" x2="11.43" y2="8.89" width="0.6096" layer="1"/>
+<contactref element="JP3" pad="2"/>
+<wire x1="8.89" y1="3.81" x2="10.16" y2="6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V_REG">
 <contactref element="JP1" pad="1"/>
@@ -1359,6 +1361,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="6.35" y1="15.367" x2="11.43" y2="15.24" width="0.6096" layer="1"/>
 <wire x1="11.43" y1="15.24" x2="11.303" y2="11.43" width="0.6096" layer="1"/>
 <wire x1="11.303" y1="11.43" x2="8.89" y2="8.89" width="0.6096" layer="1"/>
+</signal>
+<signal name="V_IN">
+<contactref element="IC1" pad="IN"/>
 </signal>
 </signals>
 </board>

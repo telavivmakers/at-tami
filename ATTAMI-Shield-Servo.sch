@@ -2086,8 +2086,8 @@ LICENSE: CERN OHL 1.7</text>
 <instance part="POT" gate="G$1" x="170.18" y="106.68"/>
 <instance part="J1" gate="A" x="226.06" y="129.54"/>
 <instance part="GND2" gate="1" x="213.36" y="142.24" rot="R180"/>
-<instance part="GND3" gate="1" x="116.84" y="91.44"/>
-<instance part="GND4" gate="1" x="154.94" y="88.9"/>
+<instance part="GND3" gate="1" x="119.38" y="91.44"/>
+<instance part="GND4" gate="1" x="144.78" y="91.44"/>
 <instance part="C2" gate="G$1" x="45.72" y="114.3"/>
 <instance part="GND5" gate="1" x="170.18" y="91.44"/>
 <instance part="SUPPLY3" gate="1" x="170.18" y="116.84"/>
@@ -2116,16 +2116,14 @@ LICENSE: CERN OHL 1.7</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="114.3" y1="99.06" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="99.06" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="101.6" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="101.6" x2="154.94" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="101.6" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="99.06" x2="144.78" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="POT" gate="G$1" pin="A"/>
@@ -2165,11 +2163,6 @@ LICENSE: CERN OHL 1.7</text>
 <label x="45.72" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="17.78" y1="124.46" x2="10.16" y2="124.46" width="0.1524" layer="91"/>
-<label x="10.16" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="86.36" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
 <label x="93.98" y="86.36" size="1.778" layer="95" rot="R180"/>
@@ -2181,6 +2174,7 @@ LICENSE: CERN OHL 1.7</text>
 <pinref part="JP2" gate="G$1" pin="3"/>
 <wire x1="127" y1="134.62" x2="127" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="127" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
+<label x="127" y="104.14" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="J1" gate="A" pin="2"/>
@@ -2196,6 +2190,7 @@ LICENSE: CERN OHL 1.7</text>
 <pinref part="J1" gate="A" pin="3"/>
 <label x="195.58" y="132.08" size="1.778" layer="95"/>
 <wire x1="149.86" y1="132.08" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
+<label x="149.86" y="104.14" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="PB2(ADC1\SCK)" class="0">
@@ -2229,19 +2224,19 @@ LICENSE: CERN OHL 1.7</text>
 <label x="195.58" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VM" class="0">
+<net name="V_SERVO" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<label x="101.6" y="81.28" size="1.778" layer="95" rot="R180"/>
-<wire x1="86.36" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="101.6" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="101.6" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="81.28" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
-<junction x="121.92" y="81.28"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="99.06" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
+<label x="86.36" y="81.28" size="1.778" layer="95"/>
+<wire x1="86.36" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="99.06" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="81.28" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
+<junction x="114.3" y="81.28"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
+<label x="152.4" y="83.82" size="1.778" layer="95" rot="R90"/>
+<label x="114.3" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="V_REG" class="0">
@@ -2262,6 +2257,13 @@ LICENSE: CERN OHL 1.7</text>
 <wire x1="45.72" y1="124.46" x2="45.72" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="124.46" x2="53.34" y2="124.46" width="0.1524" layer="91"/>
 <junction x="45.72" y="124.46"/>
+</segment>
+</net>
+<net name="V_IN" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IN"/>
+<wire x1="17.78" y1="124.46" x2="10.16" y2="124.46" width="0.1524" layer="91"/>
+<label x="10.16" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
