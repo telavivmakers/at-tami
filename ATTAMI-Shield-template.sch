@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -176,6 +176,65 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;p&gt;THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 &lt;/p&gt;</description>
 <packages>
+<package name="MOUNTINGHOLE_3.0_PLATED">
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<pad name="P$1" x="0" y="0" drill="3" diameter="6.4516"/>
+<text x="-1.27" y="-3.81" size="1.27" layer="48">3,0</text>
+</package>
+<package name="MOUNTINGHOLE_1.0_PLATED">
+<circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="42"/>
+<pad name="P$1" x="0" y="0" drill="1" diameter="3"/>
+<text x="-0.87" y="-2.74" size="0.8128" layer="48">1,0</text>
+</package>
+<package name="MOUNTINGHOLE_2.0_PLATED">
+<circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="42"/>
+<pad name="P$1" x="0" y="0" drill="2.2" diameter="3"/>
+<text x="-0.87" y="-2.74" size="0.8128" layer="48">2,0</text>
+</package>
+<package name="MOUNTINGHOLE_3.0_PLATEDTHIN">
+<circle x="0" y="0" radius="2.032" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="42"/>
+<pad name="P$1" x="0" y="0" drill="3" diameter="3.6"/>
+<text x="-0.87" y="-2.74" size="0.8128" layer="48">3,0</text>
+</package>
+<package name="MOUNTINGHOLE_2.5_PLATED">
+<circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="1" width="2.032" layer="42"/>
+<pad name="P$1" x="0" y="0" drill="2.5" diameter="3.2"/>
+</package>
+<package name="MOUNTINGHOLE_2.5_PLATED_THICK">
+<circle x="0" y="0" radius="2.25" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.25" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="1.25" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="1.25" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="1.25" width="2.032" layer="42"/>
+<pad name="P$1" x="0" y="0" drill="2.5" diameter="4"/>
+</package>
 <package name="1X07_OVAL">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-8.89" y1="0.635" x2="-8.89" y2="-0.635" width="0.2032" layer="51"/>
@@ -283,6 +342,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 <symbols>
+<symbol name="MOUNTINGHOLE">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.905" width="0.254" layer="94"/>
+</symbol>
 <symbol name="PINHD7">
 <wire x1="-6.35" y1="-10.16" x2="1.27" y2="-10.16" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-10.16" x2="1.27" y2="10.16" width="0.4064" layer="94"/>
@@ -310,6 +373,47 @@ We've spent an enormous amount of time creating and checking these footprints an
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="MOUNTINGHOLE">
+<description>&lt;b&gt;Mounting Hole&lt;/b&gt;
+&lt;p&gt;For #2 screws (0.086"/2.18mm width, 0.094"/2.4mm hole) use 2.5mm&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MOUNTINGHOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOUNTINGHOLE_3.0_PLATED">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1.0" package="MOUNTINGHOLE_1.0_PLATED">
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="2.0" package="MOUNTINGHOLE_2.0_PLATED">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3.0THIN" package="MOUNTINGHOLE_3.0_PLATEDTHIN">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2.5" package="MOUNTINGHOLE_2.5_PLATED">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2.5_THICK" package="MOUNTINGHOLE_2.5_PLATED_THICK">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="HEADER-1X7" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
@@ -471,15 +575,23 @@ DIN A4, landscape with location and doc. field</description>
 <parts>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="J1" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
+<part name="U$1" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.0" value="MOUNTINGHOLE2.0"/>
+<part name="U$2" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.0" value="MOUNTINGHOLE2.0"/>
 <part name="J2" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
+<part name="J3" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="J3" library="microbuilder" deviceset="HEADER-1X7" device="ROUND"/>
+<part name="J1" library="microbuilder" deviceset="HEADER-1X7" device="ROUND"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="33.02" y="33.02" size="1.778" layer="100">more at  github.com/telavivmakers/at-tami
+
+Notes: 
+1. D1 and D2 are Blue LEDs they might  not light when using  Vi_BAT &lt;4V~  
+2. When VCC is less than 5V change the system clock of the ATTINY85 to 8MHz or less - 
+refer to the datasheet  P163 Section  21-3 Speed</text>
 <polygon width="0.254" layer="21">
 <vertex x="0.83533125" y="-2.01666875" curve="9.500029"/>
 <vertex x="1.156721875" y="-1.851140625"/>
@@ -515,19 +627,21 @@ DIN A4, landscape with location and doc. field</description>
 <vertex x="-0.992175" y="0" curve="-247.500073"/>
 <vertex x="0.3796875" y="-0.91665"/>
 </polygon>
-<text x="162.56" y="6.35" size="2.54" layer="100" font="vector">T.A.M.I hackerspace crew 
-Shield proto
-LICENSE: CERN OHL 1.7
-</text>
+<text x="165.1" y="12.7" size="2.54" layer="100" font="vector">T.A.M.I hackerspace crew 
+LICENSE: CERN OHL 1.7</text>
+<text x="59.944" y="144.272" size="1.778" layer="91">VCC (output)</text>
+<text x="18.034" y="144.272" size="1.778" layer="91">V_BAT (input)</text>
 </plain>
 <instances>
-<instance part="GND16" gate="1" x="43.18" y="119.38"/>
-<instance part="GND1" gate="1" x="166.37" y="116.84"/>
-<instance part="J1" gate="G$1" x="156.21" y="121.92" rot="MR0"/>
-<instance part="J2" gate="G$1" x="33.02" y="124.46" rot="MR0"/>
+<instance part="GND16" gate="1" x="88.9" y="137.16"/>
+<instance part="GND1" gate="1" x="48.26" y="139.7"/>
+<instance part="U$1" gate="G$1" x="177.8" y="160.02"/>
+<instance part="U$2" gate="G$1" x="170.18" y="160.02"/>
+<instance part="J2" gate="G$1" x="35.56" y="142.24" rot="MR0"/>
+<instance part="J3" gate="G$1" x="76.2" y="142.24" rot="MR0"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="J3" gate="A" x="165.1" y="85.09"/>
-<instance part="GND5" gate="1" x="154.94" y="100.33" rot="R180"/>
+<instance part="J1" gate="A" x="233.68" y="121.92"/>
+<instance part="GND5" gate="1" x="218.44" y="134.62" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -535,84 +649,80 @@ LICENSE: CERN OHL 1.7
 <net name="GND" class="0">
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="43.18" y1="124.46" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="124.46" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="142.24" x2="88.9" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="142.24" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="158.75" y1="121.92" x2="166.37" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="166.37" y1="121.92" x2="166.37" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J3" gate="A" pin="1"/>
-<wire x1="162.56" y1="92.71" x2="154.94" y2="92.71" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="92.71" x2="154.94" y2="97.79" width="0.1524" layer="91"/>
+<pinref part="J1" gate="A" pin="1"/>
+<wire x1="231.14" y1="129.54" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="129.54" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="144.78" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
+<label x="86.868" y="145.288" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="127" x2="43.18" y2="127" width="0.1524" layer="91"/>
-<label x="43.18" y="127" size="1.778" layer="95"/>
+<wire x1="38.1" y1="144.78" x2="48.26" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VBAT" class="0">
+<net name="N$1" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="124.46" x2="158.75" y2="124.46" width="0.1524" layer="91"/>
-<label x="163.83" y="125.73" size="1.778" layer="95"/>
+<pinref part="J1" gate="A" pin="2"/>
+<wire x1="231.14" y1="127" x2="218.44" y2="127" width="0.1524" layer="91"/>
+<label x="218.44" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB3" class="0">
+<net name="N$4" class="0">
 <segment>
-<pinref part="J3" gate="A" pin="5"/>
-<wire x1="162.56" y1="82.55" x2="156.21" y2="82.55" width="0.1524" layer="91"/>
-<label x="153.67" y="82.55" size="1.778" layer="95"/>
+<pinref part="J1" gate="A" pin="3"/>
+<wire x1="231.14" y1="124.46" x2="218.44" y2="124.46" width="0.1524" layer="91"/>
+<label x="218.44" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB4" class="0">
+<net name="N$5" class="0">
 <segment>
-<pinref part="J3" gate="A" pin="6"/>
-<wire x1="162.56" y1="80.01" x2="156.21" y2="80.01" width="0.1524" layer="91"/>
-<label x="153.67" y="80.01" size="1.778" layer="95"/>
+<pinref part="J1" gate="A" pin="4"/>
+<wire x1="231.14" y1="121.92" x2="218.44" y2="121.92" width="0.1524" layer="91"/>
+<label x="218.44" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB5" class="0">
+<net name="N$6" class="0">
 <segment>
-<pinref part="J3" gate="A" pin="7"/>
-<wire x1="162.56" y1="77.47" x2="156.21" y2="77.47" width="0.1524" layer="91"/>
-<label x="153.67" y="77.47" size="1.778" layer="95"/>
+<pinref part="J1" gate="A" pin="5"/>
+<wire x1="218.44" y1="119.38" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
+<label x="218.44" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB1" class="0">
+<net name="N$7" class="0">
 <segment>
-<pinref part="J3" gate="A" pin="3"/>
-<wire x1="162.56" y1="87.63" x2="153.67" y2="87.63" width="0.1524" layer="91"/>
-<label x="153.67" y="87.63" size="1.778" layer="95"/>
+<pinref part="J1" gate="A" pin="6"/>
+<wire x1="218.44" y1="116.84" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
+<label x="218.44" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB2" class="0">
+<net name="N$8" class="0">
 <segment>
-<pinref part="J3" gate="A" pin="4"/>
-<wire x1="162.56" y1="85.09" x2="153.67" y2="85.09" width="0.1524" layer="91"/>
-<label x="153.67" y="85.09" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PB0" class="0">
-<segment>
-<pinref part="J3" gate="A" pin="2"/>
-<wire x1="162.56" y1="90.17" x2="153.67" y2="90.17" width="0.1524" layer="91"/>
+<pinref part="J1" gate="A" pin="7"/>
+<wire x1="218.44" y1="114.3" x2="231.14" y2="114.3" width="0.1524" layer="91"/>
+<label x="218.44" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="202,1,81.28,134.62,U1,BP,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
