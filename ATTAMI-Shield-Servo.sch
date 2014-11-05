@@ -2000,12 +2000,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 </class>
 </classes>
 <parts>
-<part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$1" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.0" value="MOUNTINGHOLE2.0"/>
 <part name="U$2" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.0" value="MOUNTINGHOLE2.0"/>
 <part name="J2" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
-<part name="J3" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="LONGPADS" value="servo1"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M03" device="LONGPADS" value="servo2"/>
@@ -2019,8 +2017,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="KIT"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="JP1" library="SparkFun-Passives" deviceset="JUMPER-3" device="PTH"/>
+<part name="JP1" library="SparkFun-Passives" deviceset="JUMPER-3" device="PTH" value="JUMPER-power"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND7" library="SparkFun" deviceset="GND" device=""/>
+<part name="J3" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
+<part name="GND8" library="SparkFun" deviceset="GND" device=""/>
+<part name="J4" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
 </parts>
 <sheets>
 <sheet>
@@ -2028,9 +2030,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="33.02" y="33.02" size="1.778" layer="100">more at  github.com/telavivmakers/at-tami
 
 Notes: 
-1. D1 and D2 are Blue LEDs they might  not light when using  Vi_BAT &lt;4V~  
-2. When VCC is less than 5V change the system clock of the ATTINY85 to 8MHz or less - 
-refer to the datasheet  P163 Section  21-3 Speed</text>
+</text>
 <polygon width="0.254" layer="21">
 <vertex x="0.83533125" y="-2.01666875" curve="9.500029"/>
 <vertex x="1.156721875" y="-1.851140625"/>
@@ -2068,44 +2068,50 @@ refer to the datasheet  P163 Section  21-3 Speed</text>
 </polygon>
 <text x="165.1" y="12.7" size="2.54" layer="100" font="vector">T.A.M.I hackerspace crew 
 LICENSE: CERN OHL 1.7</text>
-<text x="110.744" y="159.512" size="1.778" layer="91">VCC (output)</text>
-<text x="18.034" y="144.272" size="1.778" layer="91">V_BAT (input)</text>
+<text x="117.348" y="92.964" size="1.778" layer="91" rot="R90">V_BAT</text>
+<text x="24.13" y="116.84" size="1.778" layer="91">5-7V input</text>
+<text x="95.25" y="72.39" size="1.778" layer="91">keep V_BAT header unexposed to shield users.
+as in, only facing down to main board.
+
+power will come from either 
+1. V_IN -&gt; V_BAT
+2. V_IN -&gt; V_REG -&gt; V_BAT</text>
+<text x="24.13" y="91.44" size="1.778" layer="91">7-12V input</text>
 </plain>
 <instances>
-<instance part="GND16" gate="1" x="139.7" y="152.4"/>
-<instance part="GND1" gate="1" x="48.26" y="139.7"/>
+<instance part="GND1" gate="1" x="132.08" y="92.71"/>
 <instance part="U$1" gate="G$1" x="177.8" y="160.02"/>
 <instance part="U$2" gate="G$1" x="170.18" y="160.02"/>
-<instance part="J2" gate="G$1" x="35.56" y="142.24" rot="MR0"/>
-<instance part="J3" gate="G$1" x="127" y="157.48" rot="MR0"/>
+<instance part="J2" gate="G$1" x="119.38" y="95.25" rot="MR0"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="JP2" gate="G$1" x="106.68" y="101.6"/>
-<instance part="JP3" gate="G$1" x="137.16" y="101.6"/>
-<instance part="IC1" gate="G$1" x="25.4" y="124.46"/>
-<instance part="C1" gate="G$1" x="35.56" y="114.3"/>
+<instance part="JP2" gate="G$1" x="106.68" y="129.54"/>
+<instance part="JP3" gate="G$1" x="137.16" y="121.92"/>
+<instance part="IC1" gate="G$1" x="60.96" y="106.68"/>
+<instance part="C1" gate="G$1" x="91.44" y="101.6"/>
 <instance part="POT" gate="G$1" x="170.18" y="106.68"/>
 <instance part="J1" gate="A" x="226.06" y="129.54"/>
 <instance part="GND2" gate="1" x="213.36" y="142.24" rot="R180"/>
-<instance part="GND3" gate="1" x="119.38" y="91.44"/>
-<instance part="GND4" gate="1" x="144.78" y="91.44"/>
-<instance part="C2" gate="G$1" x="45.72" y="114.3"/>
+<instance part="GND3" gate="1" x="116.84" y="119.38"/>
+<instance part="GND4" gate="1" x="144.78" y="114.3"/>
+<instance part="C2" gate="G$1" x="83.82" y="101.6"/>
 <instance part="GND5" gate="1" x="170.18" y="91.44"/>
 <instance part="SUPPLY3" gate="1" x="170.18" y="116.84"/>
-<instance part="JP1" gate="G$1" x="83.82" y="78.74" rot="R90"/>
-<instance part="GND6" gate="1" x="50.8" y="106.68"/>
+<instance part="JP1" gate="G$1" x="73.66" y="106.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.66" y="105.41" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="86.36" y="114.935" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND6" gate="1" x="83.82" y="88.9"/>
+<instance part="GND7" gate="1" x="43.18" y="119.38"/>
+<instance part="J3" gate="G$1" x="31.75" y="121.92" rot="MR0"/>
+<instance part="GND8" gate="1" x="43.18" y="93.98"/>
+<instance part="J4" gate="G$1" x="31.75" y="96.52" rot="MR0"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="139.7" y1="157.48" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="38.1" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="95.25" x2="132.08" y2="95.25" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 </segment>
@@ -2116,14 +2122,9 @@ LICENSE: CERN OHL 1.7</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="119.38" y1="101.6" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="144.78" y1="99.06" x2="144.78" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="119.38" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="POT" gate="G$1" pin="A"/>
@@ -2131,25 +2132,37 @@ LICENSE: CERN OHL 1.7</text>
 <wire x1="170.18" y1="99.06" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<wire x1="34.29" y1="121.92" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="J3" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="116.84" y1="121.92" x2="116.84" y2="127" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="25.4" y1="116.84" x2="25.4" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="111.76" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<junction x="35.56" y="111.76"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="111.76" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
-<junction x="45.72" y="111.76"/>
+<wire x1="60.96" y1="99.06" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="50.8" y1="111.76" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="96.52" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
+<junction x="83.82" y="96.52"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="96.52" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="99.06" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<junction x="83.82" y="96.52"/>
+</segment>
+<segment>
+<wire x1="34.29" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="J4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VCC" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
-<label x="137.668" y="160.528" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="SUPPLY3" gate="1" pin="VCC"/>
 <pinref part="POT" gate="G$1" pin="E"/>
@@ -2159,22 +2172,38 @@ LICENSE: CERN OHL 1.7</text>
 <net name="V_BAT" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="144.78" x2="48.26" y2="144.78" width="0.1524" layer="91"/>
-<label x="45.72" y="144.78" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="86.36" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
-<label x="93.98" y="86.36" size="1.778" layer="95" rot="R180"/>
+<wire x1="121.92" y1="97.79" x2="127" y2="97.79" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<label x="109.22" y="109.22" size="1.778" layer="95"/>
+<wire x1="76.2" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="127" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="109.22" x2="149.86" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="121.92" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="127" y1="97.79" x2="127" y2="109.22" width="0.1524" layer="91"/>
+<junction x="127" y="109.22"/>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="129.54" x2="121.92" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="129.54" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<junction x="121.92" y="109.22"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="109.22" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+<junction x="91.44" y="109.22"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="106.68" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
+<junction x="83.82" y="109.22"/>
 </segment>
 </net>
 <net name="PB0(MOSI,PWM)" class="0">
 <segment>
 <wire x1="195.58" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="3"/>
-<wire x1="127" y1="134.62" x2="127" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="127" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
-<label x="127" y="104.14" size="1.778" layer="95" rot="R90"/>
+<wire x1="127" y1="134.62" x2="127" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="127" y1="132.08" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
+<label x="147.32" y="137.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="J1" gate="A" pin="2"/>
@@ -2184,13 +2213,13 @@ LICENSE: CERN OHL 1.7</text>
 </net>
 <net name="PB1(MISO,PWM)" class="0">
 <segment>
-<wire x1="144.78" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="104.14" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="3"/>
 <pinref part="J1" gate="A" pin="3"/>
 <label x="195.58" y="132.08" size="1.778" layer="95"/>
+<wire x1="144.78" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="124.46" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="132.08" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
-<label x="149.86" y="104.14" size="1.778" layer="95" rot="R90"/>
+<label x="170.18" y="132.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB2(ADC1\SCK)" class="0">
@@ -2224,46 +2253,28 @@ LICENSE: CERN OHL 1.7</text>
 <label x="195.58" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="V_SERVO" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<label x="86.36" y="81.28" size="1.778" layer="95"/>
-<wire x1="86.36" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="99.06" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="81.28" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
-<junction x="114.3" y="81.28"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
-<label x="152.4" y="83.82" size="1.778" layer="95" rot="R90"/>
-<label x="114.3" y="83.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="V_REG" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
-<label x="93.98" y="78.74" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="OUT"/>
-<wire x1="33.02" y1="124.46" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
-<label x="50.8" y="124.46" size="1.778" layer="95"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="124.46" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
-<junction x="35.56" y="124.46"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="124.46" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="124.46" x2="45.72" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="124.46" x2="53.34" y2="124.46" width="0.1524" layer="91"/>
-<junction x="45.72" y="124.46"/>
-</segment>
-</net>
 <net name="V_IN" class="0">
 <segment>
+<label x="26.67" y="129.54" size="1.778" layer="95"/>
+<pinref part="JP1" gate="G$1" pin="3"/>
+<wire x1="66.04" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="111.76" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="124.46" x2="34.29" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<label x="26.67" y="104.14" size="1.778" layer="95"/>
+<wire x1="53.34" y1="99.06" x2="34.29" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="17.78" y1="124.46" x2="10.16" y2="124.46" width="0.1524" layer="91"/>
-<label x="10.16" y="124.46" size="1.778" layer="95"/>
+<wire x1="53.34" y1="99.06" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
