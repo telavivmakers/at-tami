@@ -1268,11 +1268,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="NAME" x="32.273240625" y="8.666478125" size="1.27" layer="37" ratio="10"/>
 </element>
 <element name="U$3" library="ohw-logo" package="OSHW_6X150_NOTEXT" value="" x="23.241" y="10.033" rot="R90"/>
-<element name="JP2" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo1" x="3.81" y="7.112" smashed="yes" rot="R270">
-<attribute name="VALUE" x="0" y="8.382" size="1.27" layer="27" rot="R270"/>
+<element name="JP2" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo1" x="3.683" y="20.574" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-0.127" y="21.844" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP3" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo2" x="3.683" y="20.955" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-0.127" y="22.225" size="1.27" layer="27" rot="R270"/>
+<element name="JP3" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo2" x="8.255" y="2.794" smashed="yes" rot="R90">
+<attribute name="VALUE" x="12.065" y="1.524" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="IC1" library="SparkFun-PowerIC" package="TO220-IGO" value="" x="39.624" y="15.748" smashed="yes" rot="R180"/>
 <element name="C1" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="" x="36.576" y="4.953" rot="R270"/>
@@ -1293,13 +1293,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="NAME" x="44.2722" y="18.4912" size="0.8128" layer="25" ratio="18" rot="R180"/>
 <attribute name="VALUE" x="44.958" y="22.987" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="JP4" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo1_mirror" x="8.128" y="7.112" smashed="yes" rot="R270">
-<attribute name="VALUE" x="4.318" y="8.382" size="1.27" layer="27" rot="R270"/>
+<element name="JP4" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo1_mirror" x="7.874" y="19.685" smashed="yes" rot="R270">
+<attribute name="VALUE" x="4.064" y="20.955" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP5" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo2_mirror" x="7.874" y="20.955" smashed="yes" rot="R270">
-<attribute name="VALUE" x="4.064" y="22.225" size="1.27" layer="27" rot="R270"/>
+<element name="JP5" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo2_mirror" x="3.937" y="2.032" smashed="yes" rot="R90">
+<attribute name="VALUE" x="7.747" y="0.762" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="22.86" y="1.016" rot="R180"/>
+<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="22.86" y="1.397" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1352,20 +1352,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="JP2" pad="3"/>
 <contactref element="J1" pad="2"/>
 <contactref element="JP4" pad="3"/>
-<wire x1="8.128" y1="2.032" x2="12.7" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="2.032" x2="8.128" y2="2.032" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="13.97" x2="7.874" y2="14.605" width="0.8128" layer="1"/>
+<wire x1="7.874" y1="14.605" x2="3.683" y2="15.494" width="0.8128" layer="1"/>
 </signal>
 <signal name="PB1(MISO,PWM)">
 <contactref element="JP3" pad="3"/>
 <contactref element="J1" pad="3"/>
 <contactref element="JP5" pad="3"/>
-<wire x1="7.874" y1="15.875" x2="12.7" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="3.683" y1="15.875" x2="7.874" y2="15.875" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="11.43" x2="7.62" y2="7.62" width="0.8128" layer="1"/>
+<wire x1="7.62" y1="7.62" x2="8.255" y2="7.874" width="0.8128" layer="1"/>
+<wire x1="8.255" y1="7.874" x2="3.937" y2="7.112" width="0.8128" layer="1"/>
 </signal>
 <signal name="PB2(ADC1\SCK)">
 <contactref element="J1" pad="4"/>
 <contactref element="POT" pad="P$2"/>
-<wire x1="12.7" y1="8.89" x2="22.86" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="20.32" x2="17.78" y2="12.7" width="0.4064" layer="1"/>
+<wire x1="17.78" y1="12.7" x2="12.7" y2="8.89" width="0.4064" layer="1"/>
 </signal>
 <signal name="PB3(ADC3)">
 <contactref element="J1" pad="5"/>
@@ -1376,22 +1378,25 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="PB5(RESET)">
 <contactref element="J1" pad="7"/>
 <contactref element="S1" pad="P$2"/>
-<wire x1="12.7" y1="1.27" x2="19.71" y2="1.016" width="0" layer="19" extent="1-1"/>
+<wire x1="19.71" y1="1.397" x2="12.7" y2="1.27" width="0.4064" layer="1"/>
 </signal>
 <signal name="V_IN">
 <contactref element="J3" pad="1"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="36.83" y1="10.922" x2="35.814" y2="20.574" width="0" layer="19" extent="1-1"/>
+<wire x1="35.814" y1="20.574" x2="35.179" y2="14.986" width="0.8128" layer="1"/>
+<wire x1="35.179" y1="14.986" x2="36.83" y2="10.922" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="IC1" pad="IN"/>
 <contactref element="J4" pad="1"/>
-<wire x1="42.164" y1="15.748" x2="43.688" y2="19.812" width="0" layer="19" extent="1-1"/>
+<wire x1="43.688" y1="19.812" x2="42.164" y2="15.748" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="IC1" pad="OUT"/>
 <contactref element="JP1" pad="3"/>
-<wire x1="41.91" y1="10.922" x2="37.084" y2="15.748" width="0" layer="19" extent="1-1"/>
+<wire x1="37.084" y1="15.748" x2="38.354" y2="13.589" width="0.8128" layer="1"/>
+<wire x1="38.354" y1="13.589" x2="41.402" y2="12.827" width="0.8128" layer="1"/>
+<wire x1="41.402" y1="12.827" x2="41.91" y2="10.922" width="0.8128" layer="1"/>
 </signal>
 </signals>
 </board>
