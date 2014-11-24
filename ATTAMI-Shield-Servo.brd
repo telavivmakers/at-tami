@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -133,29 +133,18 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="22.829840625" y2="0" width="0" layer="20"/>
-<wire x1="22.829840625" y1="0" x2="22.829840625" y2="38.1002" width="0" layer="20"/>
-<wire x1="22.829840625" y1="38.1002" x2="0" y2="38.1002" width="0" layer="20"/>
-<wire x1="0" y1="38.1002" x2="0" y2="0" width="0" layer="20"/>
-<text x="18.737790625" y="2.510065625" size="1.016" layer="25" rot="R45">VCC</text>
-<text x="2.7168375" y="24.944909375" size="1.016" layer="25" rot="R60">PB2</text>
-<text x="3.08360625" y="27.413159375" size="1.016" layer="25" rot="R60">PB1</text>
-<text x="3.228734375" y="30.120790625" size="1.016" layer="25" rot="R60">PB0</text>
-<text x="2.930984375" y="22.41631875" size="1.016" layer="25" rot="R60">PB3</text>
-<text x="3.038803125" y="20.0373875" size="1.016" layer="25" rot="R60">PB4</text>
-<text x="3.227171875" y="17.776009375" size="1.016" layer="25" rot="R60">PB5</text>
-<wire x1="20.5597" y1="14.517584375" x2="20.8137" y2="14.517584375" width="0.127" layer="21"/>
-<wire x1="20.3073" y1="14.825984375" x2="21.0693" y2="14.825984375" width="0.127" layer="21"/>
-<wire x1="20.0533" y1="15.130784375" x2="20.6883" y2="15.130784375" width="0.127" layer="21"/>
-<wire x1="20.6883" y1="15.130784375" x2="21.3233" y2="15.130784375" width="0.127" layer="21"/>
-<wire x1="20.6883" y1="15.130784375" x2="20.6883" y2="15.638784375" width="0.127" layer="21"/>
-<text x="20.097528125" y="20.058715625" size="0.9398" layer="25">BAT</text>
+<wire x1="0" y1="0" x2="45.689840625" y2="0" width="0" layer="20"/>
+<wire x1="45.689840625" y1="0" x2="45.689840625" y2="22.8602" width="0" layer="20"/>
+<wire x1="45.689840625" y1="22.8602" x2="0" y2="22.8602" width="0" layer="20"/>
+<wire x1="0" y1="22.8602" x2="0" y2="0" width="0" layer="20"/>
+<text x="14.1468375" y="7.164909375" size="1.016" layer="25" rot="R60">PB2</text>
+<text x="14.51360625" y="9.633159375" size="1.016" layer="25" rot="R60">PB1</text>
+<text x="14.658734375" y="12.340790625" size="1.016" layer="25" rot="R60">PB0</text>
+<text x="14.360984375" y="4.63631875" size="1.016" layer="25" rot="R60">PB3</text>
+<text x="14.468803125" y="2.2573875" size="1.016" layer="25" rot="R60">PB4</text>
+<text x="14.657171875" y="-0.003990625" size="1.016" layer="25" rot="R60">PB5</text>
+<text x="32.011284375" y="12.477528125" size="0.9398" layer="25" rot="R90">BAT</text>
 <text x="17.4644375" y="21.6462375" size="1.0668" layer="37" rot="R180">J2</text>
-<wire x1="19.4354625" y1="0.6601" x2="19.6894625" y2="0.6601" width="0.127" layer="21"/>
-<wire x1="19.1830625" y1="0.9685" x2="19.9450625" y2="0.9685" width="0.127" layer="21"/>
-<wire x1="18.9290625" y1="1.2733" x2="19.5640625" y2="1.2733" width="0.127" layer="21"/>
-<wire x1="19.5640625" y1="1.2733" x2="20.1990625" y2="1.2733" width="0.127" layer="21"/>
-<wire x1="19.5640625" y1="1.2733" x2="19.5640625" y2="2.0353" width="0.127" layer="21"/>
 <polygon width="0" layer="22">
 <vertex x="7.46163125" y="3.98653125"/>
 <vertex x="7.562215625" y="3.49529375"/>
@@ -771,13 +760,11 @@
 <vertex x="12.388725" y="14.748509375"/>
 <vertex x="13.591415625" y="14.768321875"/>
 </polygon>
-<wire x1="0.602921875" y1="18.111684375" x2="0.856921875" y2="18.111684375" width="0.127" layer="21"/>
-<wire x1="0.350521875" y1="18.420084375" x2="1.112521875" y2="18.420084375" width="0.127" layer="21"/>
-<wire x1="0.096521875" y1="18.724884375" x2="0.731521875" y2="18.724884375" width="0.127" layer="21"/>
-<wire x1="0.731521875" y1="18.724884375" x2="1.366521875" y2="18.724884375" width="0.127" layer="21"/>
-<wire x1="0.731521875" y1="18.724884375" x2="0.731521875" y2="19.486884375" width="0.127" layer="21"/>
-<wire x1="2.286" y1="17.78" x2="0.254" y2="17.78" width="0.254" layer="25"/>
-<wire x1="20.828" y1="5.08" x2="22.606" y2="5.08" width="0.254" layer="25"/>
+<wire x1="14.572921875" y1="15.571684375" x2="14.826921875" y2="15.571684375" width="0.127" layer="21"/>
+<wire x1="14.320521875" y1="15.880084375" x2="15.082521875" y2="15.880084375" width="0.127" layer="21"/>
+<wire x1="14.066521875" y1="16.184884375" x2="14.701521875" y2="16.184884375" width="0.127" layer="21"/>
+<wire x1="14.701521875" y1="16.184884375" x2="15.336521875" y2="16.184884375" width="0.127" layer="21"/>
+<wire x1="14.701521875" y1="16.184884375" x2="14.701521875" y2="16.946884375" width="0.127" layer="21"/>
 <polygon width="0.4064" layer="22">
 <vertex x="12.319" y="11.811"/>
 <vertex x="12.319" y="9.906"/>
@@ -815,6 +802,11 @@
 <wire x1="5.110478125" y1="16.057884375" x2="5.110478125" y2="16.692884375" width="0.127" layer="22"/>
 <text x="16.51" y="20.447" size="1.27" layer="26" rot="MR0">ATTami V0.00</text>
 <text x="17.907" y="-1.397" size="0.4064" layer="21" rot="R180">more at   github.com/telavivmakers/at-tami</text>
+<wire x1="31.4817" y1="10.072584375" x2="31.7357" y2="10.072584375" width="0.127" layer="21"/>
+<wire x1="31.2293" y1="10.380984375" x2="31.9913" y2="10.380984375" width="0.127" layer="21"/>
+<wire x1="30.9753" y1="10.685784375" x2="31.6103" y2="10.685784375" width="0.127" layer="21"/>
+<wire x1="31.6103" y1="10.685784375" x2="32.2453" y2="10.685784375" width="0.127" layer="21"/>
+<wire x1="31.6103" y1="10.685784375" x2="31.6103" y2="11.193784375" width="0.127" layer="21"/>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -1270,52 +1262,52 @@ We've spent an enormous amount of time creating and checking these footprints an
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="microbuilder" package="MOUNTINGHOLE_2.0_PLATED" value="MOUNTINGHOLE2.0" x="2.54" y="35.56" smashed="yes" rot="R270"/>
-<element name="U$2" library="microbuilder" package="MOUNTINGHOLE_2.0_PLATED" value="MOUNTINGHOLE2.0" x="20.32" y="35.56" smashed="yes"/>
-<element name="J2" library="microbuilder" package="1X02_ROUND" value="" x="21.59" y="27.94" smashed="yes" rot="R270">
-<attribute name="NAME" x="20.843240625" y="23.906478125" size="1.27" layer="37" ratio="10"/>
+<element name="U$1" library="microbuilder" package="MOUNTINGHOLE_2.0_PLATED" value="MOUNTINGHOLE2.0" x="13.97" y="20.32" smashed="yes" rot="R270"/>
+<element name="U$2" library="microbuilder" package="MOUNTINGHOLE_2.0_PLATED" value="MOUNTINGHOLE2.0" x="31.75" y="20.32" smashed="yes"/>
+<element name="J2" library="microbuilder" package="1X02_ROUND" value="" x="33.02" y="12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="32.273240625" y="8.666478125" size="1.27" layer="37" ratio="10"/>
 </element>
-<element name="U$3" library="ohw-logo" package="OSHW_6X150_NOTEXT" value="" x="15.621" y="21.463" rot="R90"/>
-<element name="JP2" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo1" x="17.907" y="15.494" smashed="yes" rot="R180">
-<attribute name="VALUE" x="19.177" y="19.304" size="1.27" layer="27" rot="R180"/>
+<element name="U$3" library="ohw-logo" package="OSHW_6X150_NOTEXT" value="" x="23.241" y="10.033" rot="R90"/>
+<element name="JP2" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo1" x="3.81" y="7.112" smashed="yes" rot="R270">
+<attribute name="VALUE" x="0" y="8.382" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP3" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo2" x="3.175" y="11.684" smashed="yes">
-<attribute name="VALUE" x="1.905" y="7.874" size="1.27" layer="27"/>
+<element name="JP3" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo2" x="3.683" y="20.955" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-0.127" y="22.225" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="IC1" library="SparkFun-PowerIC" package="TO220-IGO" value="" x="11.43" y="33.02" rot="R180"/>
-<element name="C1" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="" x="9.525" y="27.178" rot="R90"/>
-<element name="POT" library="SparkFun-Electromechanical" package="3362U" value="" x="13.97" y="5.08" rot="R180"/>
-<element name="J1" library="microbuilder" package="1X07_ROUND" value="" x="1.27" y="24.13" rot="R270"/>
-<element name="C2" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="" x="5.969" y="27.178" rot="R90"/>
-<element name="JP1" library="SparkFun-Passives" package="1X03" value="JUMPER-power" x="12.954" y="27.559"/>
-<element name="J3" library="microbuilder" package="1X02_ROUND" value="" x="18.161" y="22.86" rot="R270"/>
-<element name="J4" library="microbuilder" package="1X02_ROUND" value="" x="19.05" y="31.75"/>
-<element name="JP4" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo1_mirror" x="21.59" y="11.43" smashed="yes" rot="R180">
-<attribute name="VALUE" x="22.86" y="15.24" size="1.27" layer="27" rot="R180"/>
+<element name="IC1" library="SparkFun-PowerIC" package="TO220-IGO" value="" x="39.624" y="15.748" smashed="yes" rot="R180"/>
+<element name="C1" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="" x="36.576" y="4.953" rot="R270"/>
+<element name="POT" library="SparkFun-Electromechanical" package="3362U" value="" x="25.4" y="22.86" rot="R180"/>
+<element name="J1" library="microbuilder" package="1X07_ROUND" value="" x="12.7" y="8.89" smashed="yes" rot="R270">
+<attribute name="VALUE" x="9.525" y="17.78" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="JP5" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo2_mirror" x="4.572" y="15.494" smashed="yes">
-<attribute name="VALUE" x="3.302" y="11.684" size="1.27" layer="27"/>
+<element name="C2" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="" x="42.164" y="4.953" rot="R270"/>
+<element name="JP1" library="SparkFun-Passives" package="1X03" value="JUMPER-power" x="36.83" y="10.922" smashed="yes">
+<attribute name="NAME" x="44.3992" y="9.7028" size="0.9398" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="35.56" y="7.747" size="1.27" layer="27"/>
 </element>
-<element name="J5" library="microbuilder" package="1X02_ROUND" value="" x="21.59" y="17.78" smashed="yes" rot="R270">
-<attribute name="VALUE" x="18.415" y="20.32" size="0.4064" layer="27" ratio="10" rot="R270"/>
+<element name="J3" library="microbuilder" package="1X02_ROUND" value="" x="37.084" y="20.574" smashed="yes">
+<attribute name="NAME" x="38.6588" y="21.3868" size="0.8128" layer="25" ratio="18"/>
+<attribute name="VALUE" x="34.544" y="17.399" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="U$4" library="microbuilder" package="MOUNTINGHOLE_2.0_PLATED" value="MOUNTINGHOLE2.0" x="2.286" y="7.62"/>
-<element name="U$5" library="microbuilder" package="MOUNTINGHOLE_2.0_PLATED" value="MOUNTINGHOLE2.0" x="20.193" y="7.366"/>
-<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="11.43" y="36.83" rot="R180"/>
+<element name="J4" library="microbuilder" package="1X02_ROUND" value="" x="42.418" y="19.812" smashed="yes" rot="R180">
+<attribute name="NAME" x="44.2722" y="18.4912" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="44.958" y="22.987" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="JP4" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo1_mirror" x="8.128" y="7.112" smashed="yes" rot="R270">
+<attribute name="VALUE" x="4.318" y="8.382" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JP5" library="SparkFun-Connectors" package="1X03_LONGPADS" value="servo2_mirror" x="7.874" y="20.955" smashed="yes" rot="R270">
+<attribute name="VALUE" x="4.064" y="22.225" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="22.86" y="1.016" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
-<polygon width="0.4064" layer="16" isolate="0.3302">
-<vertex x="23.368" y="38.989"/>
-<vertex x="-1.524" y="38.862"/>
-<vertex x="-1.2090375" y="-1.427478125"/>
-<vertex x="23.368" y="-1.016"/>
-</polygon>
 <polygon width="0.4064" layer="1" isolate="0.3302">
-<vertex x="-1.016" y="38.735"/>
+<vertex x="-0.889" y="23.241"/>
 <vertex x="-1.016" y="-0.508"/>
-<vertex x="23.622" y="-0.508"/>
-<vertex x="23.3045" y="38.76548125"/>
+<vertex x="46.101" y="-0.889"/>
+<vertex x="46.1645" y="23.14448125"/>
 </polygon>
 <contactref element="J2" pad="2"/>
 <contactref element="J1" pad="1"/>
@@ -1323,32 +1315,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="JP3" pad="1"/>
 <contactref element="J3" pad="2"/>
 <contactref element="JP2" pad="1"/>
-<contactref element="IC1" pad="GND"/>
-<contactref element="C1" pad="2"/>
-<contactref element="C2" pad="2"/>
-<contactref element="J4" pad="2"/>
 <contactref element="JP4" pad="1"/>
 <contactref element="JP5" pad="1"/>
-<contactref element="J5" pad="2"/>
 <contactref element="S1" pad="P$1"/>
-<wire x1="21.59" y1="26.67" x2="20.32" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="18.161" y1="21.59" x2="21.59" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="16.51" x2="18.161" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="11.43" x2="21.59" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="17.907" y1="15.494" x2="21.59" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="14.58" y1="36.83" x2="20.32" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="33.02" x2="14.58" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="9.525" y1="28.575" x2="11.43" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="5.969" y1="28.575" x2="9.525" y2="28.575" width="0" layer="19" extent="1-1"/>
-<wire x1="1.27" y1="31.75" x2="5.969" y2="28.575" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="2.54" x2="17.907" y2="15.494" width="0" layer="19" extent="1-1"/>
-<wire x1="3.175" y1="11.684" x2="8.89" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="4.572" y1="15.494" x2="3.175" y2="11.684" width="0" layer="19" extent="1-1"/>
+<contactref element="C2" pad="2"/>
+<contactref element="C1" pad="2"/>
+<contactref element="J4" pad="2"/>
+<contactref element="IC1" pad="GND"/>
 </signal>
 <signal name="VCC">
 <contactref element="POT" pad="P$1"/>
-<contactref element="J5" pad="1"/>
-<wire x1="13.97" y1="2.54" x2="21.59" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 </signal>
@@ -1365,32 +1341,31 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="C2" pad="1"/>
 <contactref element="JP4" pad="2"/>
 <contactref element="JP5" pad="2"/>
-<wire x1="15.494" y1="27.559" x2="21.59" y2="29.21" width="0" layer="19" extent="1-1"/>
-<wire x1="9.525" y1="25.781" x2="15.494" y2="27.559" width="0" layer="19" extent="1-1"/>
-<wire x1="5.969" y1="25.781" x2="9.525" y2="25.781" width="0" layer="19" extent="1-1"/>
-<wire x1="7.112" y1="15.494" x2="5.969" y2="25.781" width="0" layer="19" extent="1-1"/>
-<wire x1="5.715" y1="11.684" x2="7.112" y2="15.494" width="0" layer="19" extent="1-1"/>
-<wire x1="15.367" y1="15.494" x2="5.715" y2="11.684" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="11.43" x2="15.367" y2="15.494" width="0" layer="19" extent="1-1"/>
+<polygon width="0.4064" layer="16" isolate="0.3302">
+<vertex x="46.228" y="23.114"/>
+<vertex x="-1.016" y="23.241"/>
+<vertex x="-1.2090375" y="-1.427478125"/>
+<vertex x="45.974" y="-1.016"/>
+</polygon>
 </signal>
 <signal name="PB0(MOSI,PWM)">
 <contactref element="JP2" pad="3"/>
 <contactref element="J1" pad="2"/>
 <contactref element="JP4" pad="3"/>
-<wire x1="16.51" y1="11.43" x2="1.27" y2="29.21" width="0" layer="19" extent="1-1"/>
-<wire x1="12.827" y1="15.494" x2="16.51" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="8.128" y1="2.032" x2="12.7" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="2.032" x2="8.128" y2="2.032" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB1(MISO,PWM)">
 <contactref element="JP3" pad="3"/>
 <contactref element="J1" pad="3"/>
 <contactref element="JP5" pad="3"/>
-<wire x1="9.652" y1="15.494" x2="1.27" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="8.255" y1="11.684" x2="9.652" y2="15.494" width="0" layer="19" extent="1-1"/>
+<wire x1="7.874" y1="15.875" x2="12.7" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="3.683" y1="15.875" x2="7.874" y2="15.875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB2(ADC1\SCK)">
 <contactref element="J1" pad="4"/>
 <contactref element="POT" pad="P$2"/>
-<wire x1="11.43" y1="2.54" x2="1.27" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="8.89" x2="22.86" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB3(ADC3)">
 <contactref element="J1" pad="5"/>
@@ -1401,21 +1376,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="PB5(RESET)">
 <contactref element="J1" pad="7"/>
 <contactref element="S1" pad="P$2"/>
-<wire x1="1.27" y1="16.51" x2="8.28" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="1.27" x2="19.71" y2="1.016" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V_IN">
-<contactref element="JP1" pad="3"/>
 <contactref element="J3" pad="1"/>
-<contactref element="J4" pad="1"/>
+<contactref element="JP1" pad="1"/>
+<wire x1="36.83" y1="10.922" x2="35.814" y2="20.574" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
 <contactref element="IC1" pad="IN"/>
-<wire x1="13.97" y1="33.02" x2="17.78" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="18.034" y1="27.559" x2="17.78" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="18.161" y1="24.13" x2="18.034" y2="27.559" width="0" layer="19" extent="1-1"/>
+<contactref element="J4" pad="1"/>
+<wire x1="42.164" y1="15.748" x2="43.688" y2="19.812" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="IC1" pad="OUT"/>
-<contactref element="JP1" pad="1"/>
-<wire x1="12.954" y1="27.559" x2="8.89" y2="33.02" width="0" layer="19" extent="1-1"/>
+<contactref element="JP1" pad="3"/>
+<wire x1="41.91" y1="10.922" x2="37.084" y2="15.748" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

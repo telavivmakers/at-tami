@@ -2336,11 +2336,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="JP4" library="SparkFun-Connectors" deviceset="M03" device="LONGPADS" value="servo1_mirror"/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M03" device="LONGPADS" value="servo2_mirror"/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
-<part name="J5" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
-<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="GND14" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$4" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.0" value="MOUNTINGHOLE2.0"/>
-<part name="U$5" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.0" value="MOUNTINGHOLE2.0"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="-SMD-1101NE"/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 </parts>
@@ -2389,14 +2384,14 @@ Notes:
 <text x="165.1" y="12.7" size="2.54" layer="100" font="vector">T.A.M.I hackerspace crew 
 LICENSE: CERN OHL 1.7</text>
 <text x="117.348" y="92.964" size="1.778" layer="91" rot="R90">V_BAT</text>
-<text x="24.13" y="116.84" size="1.778" layer="91">5-7V input</text>
+<text x="24.13" y="88.9" size="1.778" layer="91">5-7V input</text>
 <text x="52.07" y="52.07" size="1.778" layer="91">keep V_BAT header unexposed to shield users.
 as in, only facing down to main board.
 
 power will come from either 
 1. V_IN -&gt; V_BAT
 2. V_IN -&gt; V_REG -&gt; V_BAT</text>
-<text x="24.13" y="91.44" size="1.778" layer="91">7-12V input</text>
+<text x="24.13" y="111.76" size="1.778" layer="91">7-12V input</text>
 <text x="205.74" y="106.68" size="1.778" layer="91">Reset</text>
 </plain>
 <instances>
@@ -2407,7 +2402,7 @@ power will come from either
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="JP2" gate="G$1" x="106.68" y="129.54"/>
 <instance part="JP3" gate="G$1" x="137.16" y="121.92"/>
-<instance part="IC1" gate="G$1" x="60.96" y="106.68"/>
+<instance part="IC1" gate="G$1" x="55.88" y="124.46"/>
 <instance part="C1" gate="G$1" x="91.44" y="101.6"/>
 <instance part="POT" gate="G$1" x="180.34" y="81.28"/>
 <instance part="J1" gate="A" x="226.06" y="129.54"/>
@@ -2417,23 +2412,18 @@ power will come from either
 <instance part="C2" gate="G$1" x="83.82" y="101.6"/>
 <instance part="GND5" gate="1" x="180.34" y="66.04"/>
 <instance part="SUPPLY3" gate="1" x="180.34" y="91.44"/>
-<instance part="JP1" gate="G$1" x="73.66" y="106.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="73.66" y="105.41" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="86.36" y="114.935" size="1.778" layer="96" rot="R180"/>
+<instance part="JP1" gate="G$1" x="73.66" y="106.68" smashed="yes" rot="MR90">
+<attribute name="NAME" x="73.66" y="105.41" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="71.12" y="114.935" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND6" gate="1" x="83.82" y="88.9"/>
-<instance part="GND7" gate="1" x="43.18" y="119.38"/>
-<instance part="J3" gate="G$1" x="31.75" y="121.92" rot="MR0"/>
-<instance part="GND8" gate="1" x="43.18" y="93.98"/>
-<instance part="J4" gate="G$1" x="31.75" y="96.52" rot="MR0"/>
+<instance part="GND7" gate="1" x="43.18" y="91.44"/>
+<instance part="J3" gate="G$1" x="31.75" y="93.98" rot="MR0"/>
+<instance part="GND8" gate="1" x="45.72" y="114.3"/>
+<instance part="J4" gate="G$1" x="31.75" y="121.92" rot="MR0"/>
 <instance part="JP4" gate="G$1" x="106.68" y="152.4"/>
 <instance part="JP5" gate="G$1" x="157.48" y="119.38"/>
 <instance part="GND13" gate="1" x="167.64" y="104.14"/>
-<instance part="J5" gate="G$1" x="29.718" y="157.48" rot="MR0"/>
-<instance part="SUPPLY1" gate="1" x="38.1" y="160.02" rot="R270"/>
-<instance part="GND14" gate="1" x="38.1" y="152.4"/>
-<instance part="U$4" gate="G$1" x="162.56" y="160.02"/>
-<instance part="U$5" gate="G$1" x="154.94" y="160.02"/>
 <instance part="S1" gate="G$1" x="203.2" y="106.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="200.66" y="104.14" size="1.778" layer="95" rot="R90"/>
 </instance>
@@ -2465,7 +2455,7 @@ power will come from either
 <wire x1="180.34" y1="73.66" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="34.29" y1="121.92" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="34.29" y1="93.98" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="J3" gate="G$1" pin="2"/>
 </segment>
@@ -2480,23 +2470,15 @@ power will come from either
 <wire x1="116.84" y1="149.86" x2="114.3" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="60.96" y1="99.06" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="83.82" y1="96.52" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
-<junction x="83.82" y="96.52"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="96.52" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="93.98" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<junction x="83.82" y="93.98"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="99.06" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
-<junction x="83.82" y="96.52"/>
-</segment>
-<segment>
-<wire x1="34.29" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="99.06" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
+<junction x="83.82" y="93.98"/>
+<wire x1="83.82" y1="93.98" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="G$1" pin="1"/>
@@ -2505,15 +2487,19 @@ power will come from either
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="32.258" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="38.1" y1="157.48" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="S1" gate="G$1" pin="1"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="203.2" y1="101.6" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="34.29" y1="121.92" x2="40.64" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="2"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="40.64" y1="121.92" x2="40.64" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="116.84" x2="45.72" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="55.88" y1="116.84" x2="45.72" y2="116.84" width="0.1524" layer="91"/>
+<junction x="45.72" y="116.84"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -2522,11 +2508,6 @@ power will come from either
 <pinref part="POT" gate="G$1" pin="E"/>
 <wire x1="180.34" y1="91.44" x2="180.34" y2="88.9" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="SUPPLY1" gate="1" pin="VCC"/>
-<pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="160.02" x2="32.258" y2="160.02" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="V_BAT" class="0">
 <segment>
@@ -2534,7 +2515,7 @@ power will come from either
 <wire x1="121.92" y1="97.79" x2="127" y2="97.79" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <label x="109.22" y="109.22" size="1.778" layer="95"/>
-<wire x1="76.2" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="127" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
@@ -2638,26 +2619,28 @@ power will come from either
 </net>
 <net name="V_IN" class="0">
 <segment>
-<label x="26.67" y="129.54" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="66.04" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="111.76" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="124.46" x2="34.29" y2="124.46" width="0.1524" layer="91"/>
+<label x="26.67" y="101.6" size="1.778" layer="95"/>
+<wire x1="68.58" y1="96.52" x2="34.29" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="106.68" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
 </segment>
+</net>
+<net name="N$1" class="0">
 <segment>
-<label x="26.67" y="104.14" size="1.778" layer="95"/>
-<wire x1="53.34" y1="99.06" x2="34.29" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="53.34" y1="99.06" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="124.46" x2="34.29" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="OUT"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="124.46" x2="68.58" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="124.46" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="3"/>
+<wire x1="68.58" y1="111.76" x2="71.12" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
