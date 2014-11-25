@@ -2391,7 +2391,7 @@ as in, only facing down to main board.
 power will come from either 
 1. V_IN -&gt; V_BAT
 2. V_IN -&gt; V_REG -&gt; V_BAT</text>
-<text x="24.13" y="111.76" size="1.778" layer="91">7-12V input</text>
+<text x="24.13" y="116.84" size="1.778" layer="91">7-12V input</text>
 <text x="205.74" y="106.68" size="1.778" layer="91">Reset</text>
 </plain>
 <instances>
