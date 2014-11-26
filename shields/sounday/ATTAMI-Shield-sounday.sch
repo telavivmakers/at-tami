@@ -2251,7 +2251,7 @@ LICENSE: CERN OHL 1.7</text>
 <text x="52.324" y="164.592" size="1.778" layer="91">VCC (output)</text>
 <text x="10.414" y="164.592" size="1.778" layer="91">V_BAT (input)</text>
 <text x="73.66" y="109.22" size="1.778" layer="91">this should only be used when VBAT is 
-connected to via USB plug 5V</text>
+connected to via source between 0.3-8V</text>
 <text x="144.78" y="111.76" size="1.778" layer="91">HI_QULITY mono</text>
 </plain>
 <instances>
@@ -2378,6 +2378,24 @@ connected to via USB plug 5V</text>
 <wire x1="30.48" y1="165.1" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
 <label x="40.64" y="165.1" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="CE"/>
+<wire x1="73.66" y1="83.82" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="91.44" x2="25.4" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="91.44" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
+<junction x="73.66" y="91.44"/>
+<wire x1="73.66" y1="91.44" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
+<label x="73.66" y="104.14" size="1.778" layer="95"/>
+<pinref part="LED_CHARGIN" gate="G$1" pin="A"/>
+<wire x1="104.14" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="86.36" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="86.36" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
+<junction x="109.22" y="86.36"/>
+<pinref part="LED_READY" gate="G$1" pin="A"/>
+<wire x1="109.22" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PB0" class="0">
 <segment>
@@ -2485,26 +2503,6 @@ connected to via USB plug 5V</text>
 <wire x1="83.82" y1="86.36" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="CHRG"/>
 <wire x1="83.82" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="5V+" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="CE"/>
-<wire x1="73.66" y1="83.82" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="91.44" x2="25.4" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="91.44" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
-<junction x="73.66" y="91.44"/>
-<wire x1="73.66" y1="91.44" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
-<label x="73.66" y="104.14" size="1.778" layer="95"/>
-<pinref part="LED_CHARGIN" gate="G$1" pin="A"/>
-<wire x1="104.14" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="86.36" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="86.36" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
-<junction x="109.22" y="86.36"/>
-<pinref part="LED_READY" gate="G$1" pin="A"/>
-<wire x1="109.22" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">

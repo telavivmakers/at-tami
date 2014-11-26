@@ -1390,6 +1390,14 @@ http://dangerousprototypes.com</description>
 </signal>
 <signal name="V_BAT">
 <contactref element="J2" pad="1"/>
+<contactref element="LED_CHARGIN" pad="A"/>
+<contactref element="IC1" pad="8"/>
+<contactref element="LED_READY" pad="A"/>
+<contactref element="C2" pad="1"/>
+<wire x1="18.703" y1="17.145" x2="16.764" y2="21.624" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="13.97" x2="18.703" y2="17.145" width="0" layer="19" extent="1-1"/>
+<wire x1="11.259" y1="19.812" x2="16.764" y2="21.624" width="0" layer="19" extent="1-1"/>
+<wire x1="8.893" y1="11.938" x2="11.259" y2="19.812" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB0">
 <contactref element="J1" pad="2"/>
@@ -1445,15 +1453,6 @@ http://dangerousprototypes.com</description>
 <contactref element="R2" pad="1"/>
 <contactref element="IC1" pad="7"/>
 <wire x1="11.259" y1="18.542" x2="13.12" y2="19.05" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="5V+">
-<contactref element="LED_CHARGIN" pad="A"/>
-<contactref element="IC1" pad="8"/>
-<contactref element="LED_READY" pad="A"/>
-<contactref element="C2" pad="1"/>
-<wire x1="18.703" y1="17.145" x2="16.764" y2="21.624" width="0" layer="19" extent="1-1"/>
-<wire x1="11.259" y1="19.812" x2="16.764" y2="21.624" width="0" layer="19" extent="1-1"/>
-<wire x1="8.893" y1="11.938" x2="11.259" y2="19.812" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="L1" pad="1"/>
