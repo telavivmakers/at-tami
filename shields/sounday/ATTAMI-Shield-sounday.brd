@@ -815,9 +815,10 @@
 <wire x1="5.745478125" y1="16.057884375" x2="5.110478125" y2="16.057884375" width="0.127" layer="22"/>
 <wire x1="5.110478125" y1="16.057884375" x2="4.475478125" y2="16.057884375" width="0.127" layer="22"/>
 <wire x1="5.110478125" y1="16.057884375" x2="5.110478125" y2="16.692884375" width="0.127" layer="22"/>
-<text x="10.668" y="-2.286" size="0.4064" layer="21" rot="R180">to hide the silkscreen:
+<text x="4.953" y="-4.572" size="0.4064" layer="21" rot="R180">to hide the silkscreen:
 disable layers: tNames, bNames, tPlace, bPlace</text>
 <text x="8.763" y="24.765" size="0.4064" layer="21" rot="R180">more at   github.com/telavivmakers/at-tami</text>
+<text x="-0.762" y="-1.778" size="0.635" layer="21">miniSD socket on bottom ?</text>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -1065,6 +1066,55 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 </library>
+<library name="dp_devices">
+<description>Dangerous Prototypes Standard PCB sizes
+http://dangerousprototypes.com</description>
+<packages>
+<package name="CASE_A">
+<wire x1="-1.6" y1="1.6" x2="0.8" y2="1.6" width="0.1016" layer="51"/>
+<wire x1="0.8" y1="1.6" x2="1.6" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="-0.8" x2="0.8" y2="-1.6" width="0.1016" layer="51"/>
+<wire x1="0.8" y1="-1.6" x2="-1.6" y2="-1.6" width="0.1016" layer="51"/>
+<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="1.6" width="0.1016" layer="51"/>
+<wire x1="-1.1" y1="0.95" x2="1.1" y2="0.95" width="0.1016" layer="21" curve="-98.369832"/>
+<wire x1="-1.1" y1="-0.95" x2="1.15" y2="-0.9" width="0.1016" layer="21" curve="101.144396"/>
+<wire x1="-1.6" y1="0.95" x2="-1.6" y2="1.6" width="0.1016" layer="21"/>
+<wire x1="-1.6" y1="1.6" x2="0.8" y2="1.6" width="0.1016" layer="21"/>
+<wire x1="0.8" y1="1.6" x2="1.5" y2="0.9" width="0.1016" layer="21"/>
+<wire x1="1.5" y1="-0.9" x2="0.8" y2="-1.6" width="0.1016" layer="21"/>
+<wire x1="0.8" y1="-1.6" x2="-1.6" y2="-1.6" width="0.1016" layer="21"/>
+<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="-0.95" width="0.1016" layer="21"/>
+<wire x1="-0.8" y1="1.2" x2="-0.8" y2="-1.2" width="0.1016" layer="51"/>
+<circle x="0" y="0" radius="1.45" width="0.1016" layer="51"/>
+<smd name="-" x="-1.3" y="0" dx="2" dy="1.5" layer="1"/>
+<smd name="+" x="1.3" y="0" dx="2" dy="1.5" layer="1"/>
+<text x="-1.65" y="1.75" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.65" y="-3.1425" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.8" y1="-0.3" x2="-1.45" y2="0.3" layer="51"/>
+<rectangle x1="1.45" y1="-0.3" x2="1.8" y2="0.3" layer="51"/>
+<polygon width="0.1016" layer="51">
+<vertex x="-0.85" y="1.1"/>
+<vertex x="-1.15" y="0.8"/>
+<vertex x="-1.35" y="0.3"/>
+<vertex x="-1.35" y="-0.3"/>
+<vertex x="-1.15" y="-0.8"/>
+<vertex x="-0.85" y="-1.1"/>
+<vertex x="-0.85" y="1.05"/>
+</polygon>
+</package>
+<package name="R603">
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-0.762" y="1.016" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-0.762" y="-2.286" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1264,13 +1314,19 @@ We've spent an enormous amount of time creating and checking these footprints an
 <element name="C1" library="SparkFun-Capacitors" package="1206" value="10uF" x="9.017" y="14.224" rot="R180">
 <attribute name="PROD_ID" value="CAP-10057" x="9.017" y="14.224" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R1" library="SparkFun-Passives" package="0805" value="1K" x="13.843" y="17.272"/>
-<element name="R2" library="SparkFun-Passives" package="0805" value="1K" x="13.97" y="18.796"/>
+<element name="R1" library="dp_devices" package="R603" value="1K" x="13.97" y="17.018" smashed="yes">
+<attribute name="NAME" x="12.573" y="17.526" size="0.8382" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="13.208" y="14.732" size="1.27" layer="27" font="vector" ratio="10"/>
+</element>
+<element name="R2" library="dp_devices" package="R603" value="1K" x="13.97" y="19.05" smashed="yes">
+<attribute name="NAME" x="12.7" y="19.685" size="0.8382" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="13.208" y="16.764" size="1.27" layer="27" font="vector" ratio="10"/>
+</element>
 <element name="LED_CHARGIN" library="microbuilder" package="CHIPLED_0805_NOOUTLINE" value="" x="16.764" y="20.574" smashed="yes" rot="R180">
 <attribute name="VALUE" x="15.367" y="22.352" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="LED_READY" library="microbuilder" package="CHIPLED_0805_NOOUTLINE" value="" x="17.526" y="17.272" smashed="yes" rot="R90">
-<attribute name="VALUE" x="19.304" y="18.669" size="0.4064" layer="27" ratio="10" rot="R180"/>
+<element name="LED_READY" library="microbuilder" package="CHIPLED_0805_NOOUTLINE" value="" x="17.653" y="17.145" smashed="yes" rot="R90">
+<attribute name="VALUE" x="19.431" y="18.542" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C2" library="SparkFun-Capacitors" package="1206" value="10uF" x="7.493" y="11.938" rot="R180">
 <attribute name="PROD_ID" value="CAP-10057" x="7.493" y="11.938" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1280,12 +1336,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="NAME" x="18.8468" y="9.0932" size="0.8128" layer="25" ratio="18" rot="R270"/>
 <attribute name="VALUE" x="18.415" y="10.16" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="L1" library="microbuilder" package="0805" value="100μ" x="-0.508" y="-4.572"/>
-<element name="L2" library="microbuilder" package="0805" value="470μ" x="-0.508" y="-6.731"/>
-<element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="-0.889" y="-20.32">
-<attribute name="PROD_ID" value="CAP-00810" x="-0.889" y="-20.32" size="1.778" layer="27" display="off"/>
+<element name="L1" library="microbuilder" package="0805" value="100µH" x="11.684" y="10.033" rot="R270"/>
+<element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="16.383" y="10.541" rot="R180">
+<attribute name="PROD_ID" value="CAP-00810" x="16.383" y="10.541" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R3" library="SparkFun-Passives" package="0805" value="7K5" x="-3.937" y="-20.066"/>
+<element name="R3" library="SparkFun-Passives" package="0805" value="7K5" x="7.239" y="9.144"/>
+<element name="C3" library="dp_devices" package="CASE_A" value="470u" x="14.986" y="13.335" smashed="yes">
+<attribute name="NAME" x="16.511" y="14.577" size="0.889" layer="25" ratio="10"/>
+<attribute name="VALUE" x="13.336" y="10.1925" size="1.27" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1310,20 +1369,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="C2" pad="2"/>
 <contactref element="U$4" pad="P$6"/>
 <contactref element="SPKR" pad="1"/>
-<contactref element="L2" pad="1"/>
 <contactref element="C4" pad="2"/>
-<wire x1="-1.458" y1="-6.731" x2="-0.039" y2="-20.32" width="0" layer="19" extent="1-1"/>
-<wire x1="12.953" y1="6.914" x2="-1.458" y2="-6.731" width="0" layer="19" extent="1-1"/>
-<wire x1="5.759" y1="19.812" x2="5.759" y2="17.272" width="0" layer="19" extent="1-1"/>
+<contactref element="C3" pad="-"/>
+<wire x1="5.759" y1="17.272" x2="5.759" y2="19.812" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="J3" pad="1"/>
 <contactref element="U$4" pad="P$4"/>
-<contactref element="L2" pad="2"/>
 <contactref element="C4" pad="1"/>
-<wire x1="10.403" y1="6.914" x2="21.59" y2="3.81" width="0" layer="19" extent="1-1"/>
-<wire x1="0.442" y1="-6.731" x2="10.403" y2="6.914" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.739" y1="-20.32" x2="0.442" y2="-6.731" width="0" layer="19" extent="1-1"/>
+<contactref element="C3" pad="+"/>
+<wire x1="17.233" y1="10.541" x2="16.286" y2="13.335" width="0" layer="19" extent="1-1"/>
+<wire x1="10.403" y1="6.914" x2="17.233" y2="10.541" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="3.81" x2="17.233" y2="10.541" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 </signal>
@@ -1341,6 +1398,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 </signal>
 <signal name="PB1">
 <contactref element="J1" pad="3"/>
+<contactref element="R3" pad="1"/>
+<wire x1="1.27" y1="11.43" x2="6.339" y2="9.144" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB2">
 <contactref element="J1" pad="4"/>
@@ -1354,8 +1413,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 </signal>
 <signal name="PB4">
 <contactref element="J1" pad="6"/>
-<contactref element="SPKR" pad="2"/>
-<wire x1="1.27" y1="3.81" x2="21.59" y2="6.35" width="0" layer="19" extent="1-1"/>
+<contactref element="L1" pad="2"/>
+<wire x1="1.27" y1="3.81" x2="11.684" y2="9.083" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB5">
 <contactref element="J1" pad="7"/>
@@ -1370,31 +1429,38 @@ We've spent an enormous amount of time creating and checking these footprints an
 <signal name="N$3">
 <contactref element="LED_CHARGIN" pad="C"/>
 <contactref element="R2" pad="2"/>
-<wire x1="14.87" y1="18.796" x2="16.764" y2="19.524" width="0" layer="19" extent="1-1"/>
+<wire x1="14.82" y1="19.05" x2="16.764" y2="19.524" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="LED_READY" pad="C"/>
 <contactref element="R1" pad="2"/>
-<wire x1="14.743" y1="17.272" x2="16.476" y2="17.272" width="0" layer="19" extent="1-1"/>
+<wire x1="14.82" y1="17.018" x2="16.603" y2="17.145" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R1" pad="1"/>
 <contactref element="IC1" pad="6"/>
-<wire x1="11.259" y1="17.272" x2="12.943" y2="17.272" width="0" layer="19" extent="1-1"/>
+<wire x1="11.259" y1="17.272" x2="13.12" y2="17.018" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R2" pad="1"/>
 <contactref element="IC1" pad="7"/>
-<wire x1="11.259" y1="18.542" x2="13.07" y2="18.796" width="0" layer="19" extent="1-1"/>
+<wire x1="11.259" y1="18.542" x2="13.12" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V+">
 <contactref element="LED_CHARGIN" pad="A"/>
 <contactref element="IC1" pad="8"/>
 <contactref element="LED_READY" pad="A"/>
 <contactref element="C2" pad="1"/>
-<wire x1="18.576" y1="17.272" x2="16.764" y2="21.624" width="0" layer="19" extent="1-1"/>
+<wire x1="18.703" y1="17.145" x2="16.764" y2="21.624" width="0" layer="19" extent="1-1"/>
 <wire x1="11.259" y1="19.812" x2="16.764" y2="21.624" width="0" layer="19" extent="1-1"/>
 <wire x1="8.893" y1="11.938" x2="11.259" y2="19.812" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$8">
+<contactref element="L1" pad="1"/>
+<contactref element="R3" pad="2"/>
+<contactref element="SPKR" pad="2"/>
+<wire x1="11.684" y1="10.983" x2="21.59" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="8.139" y1="9.144" x2="11.684" y2="10.983" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
