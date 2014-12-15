@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -103,7 +103,7 @@
 </package>
 </packages>
 <symbols>
-<symbol name="POLOLUSTEPPERDRIVER">
+<symbol name="A4988_driver">
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -124,12 +124,14 @@
 <pin name="1B" x="15.24" y="-5.08" length="middle" rot="R180"/>
 <pin name="VDD" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="GND@1" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<text x="-10.16" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-10.16" y="11.176" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="STEPPERDRIVER_A4988">
+<deviceset name="A4988_driver">
 <gates>
-<gate name="G$1" symbol="POLOLUSTEPPERDRIVER" x="10.16" y="12.7"/>
+<gate name="G$1" symbol="A4988_driver" x="10.16" y="12.7"/>
 </gates>
 <devices>
 <device name="" package="DIL16">

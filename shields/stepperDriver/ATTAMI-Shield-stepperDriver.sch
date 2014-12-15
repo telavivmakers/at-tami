@@ -3049,6 +3049,8 @@ type 0309, grid 2.5 mm</description>
 <pin name="1B" x="15.24" y="-5.08" length="middle" rot="R180"/>
 <pin name="VDD" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="GND@1" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<text x="-10.16" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-10.16" y="11.176" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3115,7 +3117,7 @@ type 0309, grid 2.5 mm</description>
 <part name="SJ1" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
 <part name="SJ2" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
 <part name="SJ3" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
-<part name="U$3" library="ATtami" deviceset="STEPPERDRIVER_A4988" device="" value="STEPPER_driver"/>
+<part name="BRK1" library="ATtami" deviceset="STEPPERDRIVER_A4988" device="" value="A4988_driver"/>
 <part name="SJ4" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
 </parts>
 <sheets>
@@ -3197,7 +3199,7 @@ see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
 <instance part="SJ3" gate="G$1" x="93.98" y="76.2" smashed="yes">
 <attribute name="VALUE" x="91.44" y="72.39" size="1.778" layer="96"/>
 </instance>
-<instance part="U$3" gate="G$1" x="119.38" y="71.12"/>
+<instance part="BRK1" gate="G$1" x="119.38" y="71.12"/>
 <instance part="SJ4" gate="G$1" x="99.06" y="68.58" smashed="yes">
 <attribute name="VALUE" x="96.52" y="64.77" size="1.778" layer="96"/>
 </instance>
@@ -3231,11 +3233,11 @@ see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
 <wire x1="134.62" y1="60.96" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="60.96" x2="137.16" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="U$3" gate="G$1" pin="GND@1"/>
+<pinref part="BRK1" gate="G$1" pin="GND@1"/>
 </segment>
 <segment>
 <wire x1="134.62" y1="76.2" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="GND@2"/>
+<pinref part="BRK1" gate="G$1" pin="GND@2"/>
 <pinref part="JP1" gate="A" pin="1"/>
 </segment>
 </net>
@@ -3255,7 +3257,7 @@ see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
 <wire x1="139.7" y1="63.5" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
 <label x="142.24" y="58.42" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="VDD"/>
+<pinref part="BRK1" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="SJ1" gate="G$1" pin="1"/>
@@ -3276,7 +3278,7 @@ see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
 <label x="43.18" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="VMOT"/>
+<pinref part="BRK1" gate="G$1" pin="VMOT"/>
 <wire x1="134.62" y1="78.74" x2="137.16" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="78.74" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="86.36" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
@@ -3289,7 +3291,7 @@ see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
 <wire x1="104.14" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="J1" gate="A" pin="2"/>
 <label x="68.58" y="63.5" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="STEP"/>
+<pinref part="BRK1" gate="G$1" pin="STEP"/>
 </segment>
 </net>
 <net name="PB1" class="0">
@@ -3298,7 +3300,7 @@ see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
 <label x="68.58" y="60.96" size="1.778" layer="95"/>
 <label x="99.06" y="60.96" size="1.778" layer="95"/>
 <wire x1="60.96" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="DIR"/>
+<pinref part="BRK1" gate="G$1" pin="DIR"/>
 </segment>
 </net>
 <net name="PB2" class="0">
@@ -3353,61 +3355,61 @@ see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="ENABLE"/>
+<pinref part="BRK1" gate="G$1" pin="ENABLE"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <wire x1="104.14" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="SJ3" gate="G$1" pin="2"/>
-<pinref part="U$3" gate="G$1" pin="MS1"/>
+<pinref part="BRK1" gate="G$1" pin="MS1"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <wire x1="104.14" y1="73.66" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="SJ2" gate="G$1" pin="2"/>
-<pinref part="U$3" gate="G$1" pin="MS2"/>
+<pinref part="BRK1" gate="G$1" pin="MS2"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <wire x1="104.14" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SJ1" gate="G$1" pin="2"/>
-<pinref part="U$3" gate="G$1" pin="MS3"/>
+<pinref part="BRK1" gate="G$1" pin="MS3"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="147.32" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="2B"/>
+<pinref part="BRK1" gate="G$1" pin="2B"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
 <wire x1="134.62" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="2A"/>
+<pinref part="BRK1" gate="G$1" pin="2A"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="147.32" y1="68.58" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="1A"/>
+<pinref part="BRK1" gate="G$1" pin="1A"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="5"/>
 <wire x1="134.62" y1="66.04" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="1B"/>
+<pinref part="BRK1" gate="G$1" pin="1B"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="RESET"/>
+<pinref part="BRK1" gate="G$1" pin="RESET"/>
 <pinref part="SJ4" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -3415,7 +3417,7 @@ see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
 <segment>
 <pinref part="SJ4" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="68.58" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="SLEEP"/>
+<pinref part="BRK1" gate="G$1" pin="SLEEP"/>
 <wire x1="93.98" y1="66.04" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
