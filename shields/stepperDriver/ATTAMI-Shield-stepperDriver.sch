@@ -3176,7 +3176,7 @@ type 0309, grid 2.5 mm</description>
 </package>
 </packages>
 <symbols>
-<symbol name="POLOLUSTEPPERDRIVER">
+<symbol name="A4988_DRIVER">
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -3202,15 +3202,15 @@ type 0309, grid 2.5 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="STEPPERDRIVER_A4988">
+<deviceset name="A4988_DRIVER">
 <gates>
-<gate name="G$1" symbol="POLOLUSTEPPERDRIVER" x="10.16" y="12.7"/>
+<gate name="G$1" symbol="A4988_DRIVER" x="10.16" y="12.7"/>
 </gates>
 <devices>
 <device name="" package="DIL16">
 <connects>
-<connect gate="G$1" pin="1A" pad="14"/>
-<connect gate="G$1" pin="1B" pad="13"/>
+<connect gate="G$1" pin="1A" pad="13"/>
+<connect gate="G$1" pin="1B" pad="14"/>
 <connect gate="G$1" pin="2A" pad="12"/>
 <connect gate="G$1" pin="2B" pad="11"/>
 <connect gate="G$1" pin="DIR" pad="8"/>
@@ -3265,7 +3265,7 @@ type 0309, grid 2.5 mm</description>
 <part name="SJ1" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
 <part name="SJ2" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
 <part name="SJ3" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
-<part name="BRK1" library="ATtami" deviceset="STEPPERDRIVER_A4988" device="" value="A4988_driver"/>
+<part name="BRK1" library="ATtami" deviceset="A4988_DRIVER" device="" value="A4988_driver"/>
 <part name="SJ4" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
 <part name="CN1" library="adafruit" deviceset="1X4" device="-BIG"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
