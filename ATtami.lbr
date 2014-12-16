@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -103,7 +103,7 @@
 </package>
 </packages>
 <symbols>
-<symbol name="A4988_driver">
+<symbol name="A4988_DRIVER">
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -129,15 +129,15 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="A4988_driver">
+<deviceset name="A4988_DRIVER">
 <gates>
-<gate name="G$1" symbol="A4988_driver" x="10.16" y="12.7"/>
+<gate name="G$1" symbol="A4988_DRIVER" x="10.16" y="12.7"/>
 </gates>
 <devices>
 <device name="" package="DIL16">
 <connects>
-<connect gate="G$1" pin="1A" pad="14"/>
-<connect gate="G$1" pin="1B" pad="13"/>
+<connect gate="G$1" pin="1A" pad="13"/>
+<connect gate="G$1" pin="1B" pad="14"/>
 <connect gate="G$1" pin="2A" pad="12"/>
 <connect gate="G$1" pin="2B" pad="11"/>
 <connect gate="G$1" pin="DIR" pad="8"/>
