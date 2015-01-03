@@ -203,8 +203,6 @@
 <wire x1="-2.6924" y1="2.667" x2="-2.6924" y2="-2.667" width="0" layer="51"/>
 <wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0" layer="51" curve="-180"/>
 <wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0" layer="51" curve="-180"/>
-<text x="-4.5466" y="2.3114" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-4.5466" y="2.3114" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <wire x1="-2.6924" y1="0.127" x2="-2.6924" y2="-0.127" width="0.1524" layer="21"/>
 <wire x1="-2.6924" y1="-1.143" x2="-2.6924" y2="-1.397" width="0.1524" layer="21"/>
 <wire x1="-2.6924" y1="-2.413" x2="-2.6924" y2="-2.667" width="0.1524" layer="21"/>
@@ -221,8 +219,7 @@
 <wire x1="-2.6924" y1="1.397" x2="-2.6924" y2="1.143" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0.1524" layer="21" curve="-180"/>
 <wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0.1524" layer="21" curve="-180"/>
-<text x="-4.5466" y="2.3114" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-4.5466" y="2.3114" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-2.3876" y="1.4224" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <text x="-4.6228" y="-5.2578" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="5.08" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -980,13 +977,16 @@ LICENSE: CERN OHL 1.7</text>
 <attribute name="VALUE" x="156.21" y="83.058" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="121.92" y="109.22" smashed="yes" rot="R270">
-<attribute name="NAME" x="118.3386" y="107.95" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="118.618" y="115.57" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="119.6086" y="106.426" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="122.682" y="117.094" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND2" gate="1" x="142.24" y="106.68"/>
+<instance part="GND2" gate="1" x="147.32" y="111.76"/>
 <instance part="GND3" gate="1" x="109.22" y="60.96"/>
 <instance part="D3" gate="G$1" x="109.22" y="109.22" rot="R90"/>
-<instance part="C2" gate="G$1" x="96.52" y="116.84"/>
+<instance part="C2" gate="G$1" x="96.52" y="116.84" smashed="yes">
+<attribute name="NAME" x="98.044" y="119.761" size="1.778" layer="95"/>
+<attribute name="VALUE" x="98.044" y="114.681" size="1.27" layer="96"/>
+</instance>
 <instance part="D1" gate="LED" x="109.22" y="76.2"/>
 <instance part="D2" gate="LED" x="121.92" y="76.2"/>
 <instance part="GND16" gate="1" x="88.9" y="137.16"/>
@@ -997,12 +997,15 @@ LICENSE: CERN OHL 1.7</text>
 </instance>
 <instance part="C1" gate="G$1" x="50.8" y="114.3" smashed="yes">
 <attribute name="NAME" x="52.324" y="117.221" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.324" y="112.141" size="1.778" layer="96"/>
+<attribute name="VALUE" x="52.324" y="112.141" size="1.27" layer="96"/>
 </instance>
-<instance part="D4" gate="LED" x="129.54" y="106.68"/>
+<instance part="D4" gate="LED" x="129.54" y="106.68" smashed="yes">
+<attribute name="NAME" x="128.524" y="99.822" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="132.715" y="103.124" size="1.27" layer="96" rot="R90"/>
+</instance>
 <instance part="R2" gate="G$1" x="129.54" y="116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="128.0414" y="110.49" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="127.762" y="118.11" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="128.8034" y="110.744" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="132.08" y="120.142" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND12" gate="1" x="144.78" y="96.52" rot="R90"/>
 <instance part="U1" gate="G$1" x="78.74" y="121.92" smashed="yes">
@@ -1026,7 +1029,7 @@ LICENSE: CERN OHL 1.7</text>
 <instance part="GND5" gate="1" x="223.52" y="137.16" rot="R180"/>
 <instance part="D5" gate="G$1" x="104.14" y="149.86" smashed="yes" rot="R180">
 <attribute name="NAME" x="102.616" y="152.908" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="111.252" y="152.908" size="1.27" layer="96" rot="R180"/>
+<attribute name="VALUE" x="108.712" y="147.828" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="SJ1" gate="1" x="134.62" y="96.52" rot="R180"/>
 <instance part="COIN_CELL_(+)" gate="G$1" x="121.92" y="149.86" smashed="yes">
@@ -1070,10 +1073,9 @@ LICENSE: CERN OHL 1.7</text>
 <pinref part="D2" gate="LED" pin="C"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="116.84" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="116.84" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="U2" gate="A" pin="GND"/>
-<wire x1="147.32" y1="116.84" x2="142.24" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
