@@ -63,6 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -631,6 +632,23 @@ refer to the datasheet  P163 Section  21-3 Speed</text>
 LICENSE: CERN OHL 1.7</text>
 <text x="59.944" y="144.272" size="1.778" layer="91">VCC (output)</text>
 <text x="18.034" y="144.272" size="1.778" layer="91">V_BAT (input)</text>
+<text x="211.836" y="114.3" size="1.778" layer="95" align="bottom-right">RESET/ADC0</text>
+<text x="212.09" y="119.38" size="1.778" layer="95" font="vector" align="bottom-right">PWM/ADC3</text>
+<text x="212.09" y="121.92" size="1.778" layer="95" align="bottom-right">SCK/SCL/ADC1</text>
+<text x="212.09" y="116.84" size="1.778" layer="95" font="vector" align="bottom-right">PWM/ADC2</text>
+<text x="212.09" y="124.46" size="1.778" layer="95" align="bottom-right">MISO/PWM</text>
+<text x="212.09" y="127" size="1.778" layer="95" align="bottom-right">AREF/MOSI/SDA/PWM</text>
+<text x="235.458" y="111.76" size="1.778" layer="91" distance="42">on chip
+
+4
+5
+6
+7
+2
+3
+1
+8</text>
+<text x="211.836" y="111.76" size="1.778" layer="95" align="bottom-right">(not on header) VCC</text>
 </plain>
 <instances>
 <instance part="GND16" gate="1" x="88.9" y="137.16"/>
