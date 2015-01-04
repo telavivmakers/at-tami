@@ -1262,8 +1262,6 @@
 <contactref element="J2" pad="2"/>
 <wire x1="7.7724" y1="13.301" x2="9.652" y2="13.2756" width="0.4064" layer="1"/>
 <via x="13.05051875" y="12.120878125" extent="1-16" drill="0.6"/>
-<wire x1="7.7724" y1="13.301" x2="8.2804" y2="12.3444" width="0.4064" layer="1"/>
-<wire x1="8.2804" y1="12.3444" x2="9.8298" y2="10.8966" width="0.4064" layer="1" curve="38.525939"/>
 <contactref element="J1" pad="1"/>
 <via x="5.55751875" y="2.595878125" extent="1-16" drill="0.6"/>
 <contactref element="SJ1" pad="1"/>
