@@ -1160,7 +1160,7 @@
 <attribute name="VALUE" x="15.113" y="13.335" size="0.4064" layer="27" rot="R90" display="off"/>
 </element>
 <element name="D3" library="ATtami" package="SOD-323" value="Schottky" x="16.1315375" y="15.394940625" smashed="yes" rot="R90">
-<attribute name="NAME" x="16.858159375" y="19.812759375" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="NAME" x="16.985159375" y="19.685759375" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
 </element>
 <element name="C2" library="ATtami" package="0805" value="2.2uf/16V" x="6.068059375" y="5.496559375" smashed="yes">
 <attribute name="NAME" x="5.590540625" y="3.67791875" size="0.8128" layer="25"/>
@@ -1181,11 +1181,14 @@
 <attribute name="NAME" x="22.6299875" y="18.214753125" size="0.8128" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="21.9949875" y="19.103753125" size="1.27" layer="27" ratio="10" rot="R180" display="off"/>
 </element>
-<element name="R2" library="ATtami" package="0805" value="1K5" x="18.194021875" y="13.5763" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.571721875" y="15.0241" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="16.797021875" y="14.5923" size="0.4064" layer="27" rot="R270" display="off"/>
+<element name="R2" library="ATtami" package="0805" value="1K5" x="18.448021875" y="13.4493" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.825721875" y="14.8971" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="17.051021875" y="14.4653" size="0.4064" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U1" library="ATtami" package="SOT23-5" value="MIC5225" x="16.383003125" y="8.5318625" smashed="yes" rot="R90"/>
+<element name="U1" library="ATtami" package="SOT23-5" value="MIC5225" x="16.383003125" y="8.5318625" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.4711375" y="9.017003125" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="16.573503125" y="7.5793625" size="0.4064" layer="27" rot="R90"/>
+</element>
 <element name="U$1" library="ATtami" package="MOUNTINGHOLE_2.0_PLATED" value="MOUNTINGHOLE2.0" x="2.54" y="20.32" smashed="yes" rot="R270"/>
 <element name="S1" library="ATtami" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="11.2014" y="1.8034" smashed="yes" rot="R180">
 <attribute name="NAME" x="12.4234" y="4.8834" size="1.016" layer="37" rot="R180"/>
@@ -1202,7 +1205,7 @@
 <attribute name="VALUE" x="-1.905" y="17.78" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="D5" library="ATtami" package="SOD-323" value="Schottky" x="15.494" y="4.826" smashed="yes">
-<attribute name="NAME" x="11.954" y="4.107" size="0.8128" layer="25" ratio="18" rot="R90"/>
+<attribute name="NAME" x="11.954" y="4.107" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
 <attribute name="VALUE" x="13.251" y="2.78" size="0.4064" layer="27" ratio="10" display="off"/>
 </element>
 <element name="SJ1" library="ATtami" package="SOLDERJUMPER_CLOSEDWIRE" value="" x="20.32" y="16.51" smashed="yes" rot="MR0">
@@ -1269,15 +1272,12 @@
 <wire x1="4.1275" y1="17.0053" x2="5.2832" y2="18.161" width="0.2032" layer="1"/>
 <wire x1="4.1275" y1="17.0053" x2="3.9878" y2="16.9672" width="0.2032" layer="1"/>
 <contactref element="U2" pad="4"/>
-<via x="15.59051875" y="8.564878125" extent="1-16" drill="0.6"/>
-<wire x1="15.59051875" y1="8.564878125" x2="15.676878125" y2="8.564878125" width="0.254" layer="1"/>
-<wire x1="15.676878125" y1="8.564878125" x2="16.002" y2="8.89" width="0.254" layer="1"/>
-<wire x1="16.002" y1="8.89" x2="16.002" y2="10.875440625" width="0.254" layer="1"/>
-<wire x1="16.002" y1="10.875440625" x2="15.89538125" y2="10.982059375" width="0.254" layer="1"/>
 <wire x1="9.573740625" y1="18.2553" x2="9.525" y2="18.2553" width="0.3048" layer="1"/>
 <wire x1="9.525" y1="18.2553" x2="9.525" y2="17.907" width="0.3048" layer="1"/>
 <wire x1="9.525" y1="17.907" x2="5.2832" y2="17.907" width="0.3048" layer="1"/>
 <wire x1="5.2832" y1="17.907" x2="5.2832" y2="18.161" width="0.3048" layer="1"/>
+<via x="16.35251875" y="9.199878125" extent="1-16" drill="0.6"/>
+<via x="16.35251875" y="7.929878125" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="PB3">
 <contactref element="R3" pad="2"/>
@@ -1338,9 +1338,9 @@
 <wire x1="17.69538125" y1="9.494140625" x2="17.683103125" y2="9.4818625" width="0.4064" layer="1"/>
 <wire x1="17.69538125" y1="10.982059375" x2="18.729059375" y2="11.109059375" width="0.4064" layer="1"/>
 <wire x1="18.729059375" y1="11.109059375" x2="21.59" y2="13.97" width="0.4064" layer="1"/>
-<wire x1="17.683103125" y1="9.4818625" x2="16.637" y2="9.4818625" width="0.3048" layer="1"/>
-<wire x1="16.637" y1="9.4818625" x2="16.637" y2="7.493" width="0.3048" layer="1"/>
-<wire x1="16.637" y1="7.493" x2="17.683103125" y2="7.493" width="0.3048" layer="1"/>
+<wire x1="17.683103125" y1="9.4818625" x2="18.923" y2="9.4818625" width="0.3048" layer="1"/>
+<wire x1="18.923" y1="9.4818625" x2="18.923" y2="7.493" width="0.3048" layer="1"/>
+<wire x1="18.923" y1="7.493" x2="17.683103125" y2="7.493" width="0.3048" layer="1"/>
 <wire x1="17.683103125" y1="7.493" x2="17.683103125" y2="7.5818625" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$7">
@@ -1363,8 +1363,6 @@
 <contactref element="U1" pad="5"/>
 <contactref element="D5" pad="CQ"/>
 <contactref element="J3" pad="1"/>
-<wire x1="18.194021875" y1="12.6763" x2="16.1315375" y2="13.235940625" width="0.4064" layer="1"/>
-<wire x1="13.716" y1="13.451" x2="16.1315375" y2="13.235940625" width="0.4064" layer="1"/>
 <contactref element="U2" pad="8"/>
 <wire x1="5.1816" y1="6.985" x2="5.168059375" y2="5.496559375" width="0.4064" layer="1"/>
 <wire x1="16.1315375" y1="13.235940625" x2="15.648940625" y2="13.235940625" width="0.254" layer="1"/>
@@ -1382,6 +1380,12 @@
 <wire x1="15.082903125" y1="6.634096875" x2="15.621" y2="6.096" width="0.254" layer="1"/>
 <wire x1="15.621" y1="6.096" x2="19.304" y2="6.096" width="0.254" layer="1"/>
 <wire x1="19.304" y1="6.096" x2="21.59" y2="3.81" width="0.254" layer="1"/>
+<wire x1="18.448021875" y1="12.5493" x2="16.129" y2="12.5493" width="0.4064" layer="1"/>
+<wire x1="16.129" y1="12.5493" x2="16.129" y2="12.573" width="0.4064" layer="1"/>
+<wire x1="16.129" y1="12.573" x2="16.1315375" y2="12.573" width="0.4064" layer="1"/>
+<wire x1="16.1315375" y1="12.573" x2="16.1315375" y2="13.235940625" width="0.4064" layer="1"/>
+<wire x1="16.1315375" y1="13.235940625" x2="13.716" y2="13.235940625" width="0.4064" layer="1"/>
+<wire x1="13.716" y1="13.235940625" x2="13.716" y2="13.451" width="0.4064" layer="1"/>
 </signal>
 <signal name="PB1">
 <contactref element="J1" pad="3"/>
@@ -1392,7 +1396,7 @@
 <signal name="N$11">
 <contactref element="R2" pad="1"/>
 <contactref element="D4" pad="A"/>
-<wire x1="18.194021875" y1="14.4763" x2="20.193" y2="15.24" width="0.4064" layer="1"/>
+<wire x1="18.448021875" y1="14.3493" x2="20.193" y2="15.24" width="0.4064" layer="1"/>
 <wire x1="20.193" y1="15.24" x2="21.7749875" y2="16.563753125" width="0.4064" layer="1"/>
 </signal>
 <signal name="V-BUS">
