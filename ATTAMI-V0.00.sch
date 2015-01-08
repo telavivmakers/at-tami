@@ -137,10 +137,10 @@
 <library name="ATtami">
 <packages>
 <package name="USB-MICRO-ALIEXPRESS">
-<smd name="VCC" x="-1.3" y="1.925" dx="0.4" dy="1.858" layer="1"/>
-<smd name="DM" x="-0.65" y="1.925" dx="0.4" dy="1.858" layer="1"/>
-<smd name="DP" x="0" y="1.925" dx="0.4" dy="1.858" layer="1"/>
-<smd name="GND@1" x="1.3" y="1.925" dx="0.4" dy="1.858" layer="1"/>
+<smd name="VCC" x="-1.3" y="1.925" dx="0.4" dy="2.3" layer="1"/>
+<smd name="DM" x="-0.65" y="1.925" dx="0.4" dy="2.3" layer="1"/>
+<smd name="DP" x="0" y="1.925" dx="0.4" dy="2.3" layer="1"/>
+<smd name="GND@1" x="1.3" y="1.925" dx="0.4" dy="2.3" layer="1"/>
 <smd name="GND@3" x="-3.95" y="-0.95" dx="1.9" dy="1.9" layer="1"/>
 <smd name="GND@2" x="3.95" y="-0.95" dx="1.9" dy="1.9" layer="1"/>
 <smd name="P$9" x="-1.2" y="-0.95" dx="1.9" dy="1.9" layer="1"/>
@@ -153,6 +153,7 @@
 <text x="-4.4" y="-3.7" size="0.6096" layer="21">&gt;Value</text>
 <hole x="-2" y="1.35" drill="0.6"/>
 <hole x="2" y="1.35" drill="0.6"/>
+<smd name="DP1" x="0.65" y="1.925" dx="0.4" dy="2.3" layer="1"/>
 </package>
 <package name="SOIC127P798X216-8N">
 <smd name="1" x="-3.7084" y="1.905" dx="1.5494" dy="0.5334" layer="1"/>
