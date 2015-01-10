@@ -562,6 +562,85 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ATtami">
+<packages>
+<package name="SOIC-8">
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="1.8" x2="2.4" y2="1.8" width="0.127" layer="21"/>
+<wire x1="2.4" y1="1.8" x2="2.4" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.5" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.9" x2="-2.5" y2="1.8" width="0.127" layer="21"/>
+<circle x="-1.8" y="-1" radius="0.2828" width="0.127" layer="21"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-1.905" size="1.27" layer="27" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MSGEQ7">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.4064" layer="94"/>
+<text x="-10.16" y="8.5725" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="CKIN" x="15.24" y="5.08" length="middle" direction="sup" rot="R180"/>
+<pin name="RESET" x="15.24" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="GND" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="IN" x="15.24" y="-2.54" length="middle" direction="sup" rot="R180"/>
+<pin name="VDDA" x="-15.24" y="5.08" length="middle" direction="sup"/>
+<pin name="VSSA" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="OUT" x="-15.24" y="0" length="middle" direction="out"/>
+<pin name="STROBE" x="-15.24" y="-2.54" length="middle" direction="in"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="IC_MSGEQ7" prefix="IC">
+<description>seven band Graphic Equalizer IC</description>
+<gates>
+<gate name="IC" symbol="MSGEQ7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SOIC8" package="SOIC-8">
+<connects>
+<connect gate="IC" pin="CKIN" pad="8"/>
+<connect gate="IC" pin="GND" pad="6"/>
+<connect gate="IC" pin="IN" pad="5"/>
+<connect gate="IC" pin="OUT" pad="3"/>
+<connect gate="IC" pin="RESET" pad="7"/>
+<connect gate="IC" pin="STROBE" pad="4"/>
+<connect gate="IC" pin="VDDA" pad="1"/>
+<connect gate="IC" pin="VSSA" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -583,6 +662,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="J1" library="microbuilder" deviceset="HEADER-1X7" device="ROUND"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
+<part name="IC1" library="ATtami" deviceset="IC_MSGEQ7" device="-SOIC8"/>
 </parts>
 <sheets>
 <sheet>
@@ -660,6 +740,7 @@ LICENSE: CERN OHL 1.7</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="J1" gate="A" x="233.68" y="121.92"/>
 <instance part="GND5" gate="1" x="218.44" y="134.62" rot="R180"/>
+<instance part="IC1" gate="IC" x="116.84" y="83.82"/>
 </instances>
 <busses>
 </busses>
