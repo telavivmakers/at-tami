@@ -135,6 +135,7 @@
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
 <library name="ATtami">
+<description>a growing library for parts used in the ATtami project. more info at https://github.com/telavivmakers/at-tami</description>
 <packages>
 <package name="USB-MICRO-ALIEXPRESS">
 <smd name="VCC" x="-1.3" y="1.925" dx="0.4" dy="2.3" layer="1"/>
