@@ -1157,7 +1157,7 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="139.7" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
-<label x="160.02" y="139.7" size="1.778" layer="95"/>
+<label x="160.02" y="142.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB1" class="0">
@@ -1191,9 +1191,9 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 <label x="218.44" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="139.7" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
-<label x="129.54" y="139.7" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="139.7" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
+<label x="144.78" y="142.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB4" class="0">
@@ -1203,9 +1203,9 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 <label x="218.44" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="139.7" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
-<label x="144.78" y="139.7" size="1.778" layer="95"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="139.7" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
+<label x="129.54" y="142.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PB5" class="0">
@@ -1285,9 +1285,9 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 <net name="N$10" class="0">
 <segment>
 <pinref part="Q2" gate="Q" pin="E"/>
-<wire x1="137.16" y1="114.3" x2="137.16" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="3"/>
-<wire x1="137.16" y1="99.06" x2="177.8" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="114.3" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="177.8" y1="104.14" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -1301,9 +1301,9 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 <net name="N$13" class="0">
 <segment>
 <pinref part="Q3" gate="Q" pin="E"/>
-<wire x1="167.64" y1="114.3" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="167.64" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="114.3" x2="167.64" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="167.64" y1="99.06" x2="177.8" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
