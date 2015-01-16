@@ -3204,16 +3204,14 @@ LICENSE: CERN OHL 1.7</text>
 as a digital logic and bellow 0.9v as reset.
 
 see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
-<text x="269.24" y="55.88" size="1.778" layer="91" rot="R180">nice trick to use the 2.5-5v range 
-as a digital logic and bellow 0.9v as 
-reset for the attiny.
+<text x="213.36" y="68.58" size="1.778" layer="91" rot="R180">nice trick to use the 2.5-5v range 
+as an ADC/ logic input to the attiny
+and below 0.9v as reset for the attiny.
 
 see instructables.com/id/
 Attiny85-as-a-StepDir-Stepper-Motor-Controller
-
-it is a limited pin so best it does simple stuff. not pwm.
-but it is possible with this trick</text>
-<text x="184.404" y="80.01" size="1.778" layer="91" rot="R90">12V</text>
+</text>
+<text x="184.404" y="80.01" size="1.778" layer="91" rot="R90">audio</text>
 <text x="184.404" y="94.488" size="1.778" layer="91" rot="R90">RGB led </text>
 </plain>
 <instances>
@@ -3248,11 +3246,11 @@ but it is possible with this trick</text>
 <instance part="R4" gate="G$1" x="129.54" y="134.62" rot="R90"/>
 <instance part="JP2" gate="A" x="180.34" y="104.14"/>
 <instance part="GND3" gate="1" x="149.86" y="96.52" rot="R270"/>
-<instance part="R5" gate="G$1" x="170.18" y="40.64" rot="MR90"/>
-<instance part="Q4" gate="G$1" x="170.18" y="53.34" rot="MR180"/>
-<instance part="R6" gate="G$1" x="157.48" y="53.34" rot="MR180"/>
-<instance part="R7" gate="G$1" x="170.18" y="63.5" rot="MR270"/>
-<instance part="GND4" gate="1" x="170.18" y="71.12" rot="MR180"/>
+<instance part="R5" gate="G$1" x="134.62" y="40.64" rot="MR90"/>
+<instance part="Q4" gate="G$1" x="134.62" y="53.34" rot="MR180"/>
+<instance part="R6" gate="G$1" x="121.92" y="53.34" rot="MR180"/>
+<instance part="R7" gate="G$1" x="134.62" y="63.5" rot="MR270"/>
+<instance part="GND4" gate="1" x="134.62" y="71.12" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -3316,8 +3314,8 @@ but it is possible with this trick</text>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="35.56" x2="170.18" y2="33.02" width="0.1524" layer="91"/>
-<label x="170.18" y="33.02" size="1.778" layer="95" rot="MR180"/>
+<wire x1="134.62" y1="35.56" x2="134.62" y2="33.02" width="0.1524" layer="91"/>
+<label x="134.62" y="33.02" size="1.778" layer="95" rot="MR180"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -3367,8 +3365,17 @@ but it is possible with this trick</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="IC" pin="OUT"/>
-<wire x1="101.6" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
-<label x="96.52" y="83.82" size="1.778" layer="95"/>
+<wire x1="101.6" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="83.82" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="76.2" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="76.2" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="53.34" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="IC" pin="RESET"/>
+<wire x1="132.08" y1="86.36" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
+<label x="139.7" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB2" class="0">
@@ -3416,10 +3423,10 @@ but it is possible with this trick</text>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="Q4" gate="G$1" pin="C"/>
-<wire x1="170.18" y1="45.72" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="48.26" x2="177.8" y2="48.26" width="0.1524" layer="91"/>
-<junction x="170.18" y="48.26"/>
-<label x="177.8" y="48.26" size="1.778" layer="95"/>
+<wire x1="134.62" y1="45.72" x2="134.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
+<junction x="134.62" y="48.26"/>
+<label x="142.24" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN" class="0">
@@ -3518,17 +3525,7 @@ but it is possible with this trick</text>
 <segment>
 <pinref part="Q4" gate="G$1" pin="B"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="53.34" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="$$$" class="0">
-<segment>
-<pinref part="IC1" gate="IC" pin="RESET"/>
-<wire x1="132.08" y1="86.36" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
-<label x="137.16" y="86.36" size="1.778" layer="95"/>
-<wire x1="144.78" y1="86.36" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="53.34" x2="152.4" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
