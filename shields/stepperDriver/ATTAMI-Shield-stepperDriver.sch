@@ -3322,6 +3322,7 @@ LICENSE: CERN OHL 1.7</text>
 as a digital logic and bellow 0.9v as reset.
 
 see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
+<text x="84.328" y="29.718" size="1.778" layer="91">I2C</text>
 </plain>
 <instances>
 <instance part="GND16" gate="1" x="83.82" y="121.92"/>
@@ -3471,7 +3472,10 @@ see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
 <segment>
 <pinref part="J1" gate="A" pin="4"/>
 <label x="68.58" y="58.42" size="1.778" layer="95"/>
-<wire x1="60.96" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="58.42" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="58.42" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="BRK1" gate="G$1" pin="ENABLE"/>
+<wire x1="76.2" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB3" class="0">
@@ -3519,13 +3523,6 @@ see instructables.com/id/Attiny85-as-a-StepDir-Stepper-Motor-Controller</text>
 <segment>
 <pinref part="Q1" gate="G$1" pin="B"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="ENABLE" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="BRK1" gate="G$1" pin="ENABLE"/>
 </segment>
 </net>
 <net name="N$10" class="0">
