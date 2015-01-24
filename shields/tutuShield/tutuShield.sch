@@ -1111,13 +1111,6 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 <label x="165.1" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="144.78" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
-<label x="86.868" y="145.288" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="V_BAT" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -1291,22 +1284,28 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 <wire x1="167.64" y1="99.06" x2="177.8" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDDA" class="0">
-<segment>
-<pinref part="C4" gate="G$1" pin="2"/>
-<label x="93.98" y="88.9" size="1.778" layer="95"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="99.06" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="IC" pin="VDDA"/>
-<wire x1="91.44" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="81.28" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="IC1" gate="IC" pin="VDDA"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="99.06" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
+<junction x="93.98" y="88.9"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="144.78" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
+<label x="86.868" y="145.288" size="1.778" layer="95"/>
+<wire x1="93.98" y1="144.78" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
+<junction x="93.98" y="99.06"/>
 </segment>
 </net>
 </nets>
