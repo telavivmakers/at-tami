@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -945,7 +945,7 @@ http://dangerousprototypes.com</description>
 <part name="R1" library="ATtami" deviceset="RESISTOR" device="0805-RES" value="200K"/>
 <part name="Q2" library="dp_devices" deviceset="TRANSISTOR_BJT_NPN" device="-SOT-23-BEC"/>
 <part name="Q1" library="dp_devices" deviceset="TRANSISTOR_BJT_NPN" device="-SOT-23-BEC"/>
-<part name="Q3" library="dp_devices" deviceset="TRANSISTOR_BJT_NPN" device="-SOT-23-BEC"/>
+<part name="Q1-3" library="dp_devices" deviceset="TRANSISTOR_BJT_NPN" device="-SOT-23-BEC"/>
 <part name="R2" library="ATtami" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="R3" library="ATtami" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="R4" library="ATtami" deviceset="RESISTOR" device="0805-RES" value="10K"/>
@@ -1057,7 +1057,7 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 <instance part="R1" gate="G$1" x="86.36" y="99.06"/>
 <instance part="Q2" gate="Q" x="134.62" y="119.38"/>
 <instance part="Q1" gate="Q" x="149.86" y="119.38"/>
-<instance part="Q3" gate="Q" x="165.1" y="119.38"/>
+<instance part="Q1-3" gate="Q" x="165.1" y="119.38"/>
 <instance part="R2" gate="G$1" x="144.78" y="134.62" rot="R90"/>
 <instance part="R3" gate="G$1" x="160.02" y="134.62" rot="R90"/>
 <instance part="R4" gate="G$1" x="129.54" y="134.62" rot="R90"/>
@@ -1128,7 +1128,7 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 <label x="152.4" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="Q3" gate="Q" pin="C"/>
+<pinref part="Q1-3" gate="Q" pin="C"/>
 <wire x1="167.64" y1="124.46" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
 <label x="167.64" y="124.46" size="1.778" layer="95"/>
 </segment>
@@ -1239,7 +1239,7 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 <net name="N$3" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="Q3" gate="Q" pin="B"/>
+<pinref part="Q1-3" gate="Q" pin="B"/>
 <wire x1="160.02" y1="129.54" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="121.92" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
 </segment>
@@ -1278,7 +1278,7 @@ Attiny85-as-a-StepDir-Stepper-Motor-Controller
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="Q3" gate="Q" pin="E"/>
+<pinref part="Q1-3" gate="Q" pin="E"/>
 <wire x1="167.64" y1="114.3" x2="167.64" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="3"/>
 <wire x1="167.64" y1="99.06" x2="177.8" y2="99.06" width="0.1524" layer="91"/>
