@@ -1342,6 +1342,7 @@ design rules under a new name.</description>
 <contactref element="SJ1" pad="1"/>
 <contactref element="COIN_CELL_(-)" pad="1"/>
 <contactref element="U2" pad="4"/>
+<<<<<<< HEAD
 <contactref element="1117" pad="1" route="any" routetag="1.GND"/>
 <wire x1="15.89538125" y1="10.982059375" x2="12.277459375" y2="10.982059375" width="0.2032" layer="1"/>
 <wire x1="12.277459375" y1="10.982059375" x2="11.7094" y2="10.541" width="0.2032" layer="1"/>
@@ -1358,6 +1359,14 @@ design rules under a new name.</description>
 <via x="8.89" y="11.811" extent="1-16" drill="0.6"/>
 <via x="5.842" y="2.286" extent="1-16" drill="0.6"/>
 <via x="14.9606" y="7.493" extent="1-16" drill="0.6"/>
+=======
+<wire x1="9.573740625" y1="18.2553" x2="9.525" y2="18.2553" width="0.3048" layer="1"/>
+<wire x1="9.525" y1="18.2553" x2="9.525" y2="17.907" width="0.3048" layer="1"/>
+<wire x1="9.525" y1="17.907" x2="4.9276" y2="17.907" width="0.3048" layer="1"/>
+<via x="16.35251875" y="9.199878125" extent="1-16" drill="0.6"/>
+<via x="16.35251875" y="7.929878125" extent="1-16" drill="0.6"/>
+<wire x1="4.9276" y1="17.907" x2="3.9878" y2="16.9672" width="0.3048" layer="1"/>
+>>>>>>> master
 </signal>
 <signal name="PB3">
 <contactref element="R3" pad="2"/>
