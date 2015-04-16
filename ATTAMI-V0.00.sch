@@ -1159,7 +1159,6 @@ LICENSE: CERN OHL 1.7</text>
 </instance>
 <instance part="SJ1" gate="G$1" x="134.62" y="88.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="137.16" y="92.71" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="167.64" y="86.36" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="COIN_CELL_(+)" gate="G$1" x="81.28" y="165.1" smashed="yes">
 <attribute name="NAME" x="83.82" y="164.719" size="1.778" layer="95"/>
