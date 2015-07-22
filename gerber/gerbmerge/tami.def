@@ -1,0 +1,28 @@
+# This example simply takes the small Proj1 board and panelizes
+Row {
+  Col {
+    Proj1
+    Proj1
+    Proj1
+    Proj1
+  }
+  Col {
+    Proj1
+    Proj1
+    Proj1
+    Proj1
+  }
+  Col {
+    Proj1
+    Proj1
+    Proj1
+    Proj1
+  }
+  Col {
+    Proj1
+    Proj1
+    Proj1
+    Proj1
+  }  
+}  
+
