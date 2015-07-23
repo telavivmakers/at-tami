@@ -6,5 +6,10 @@ ATtami עָלֵקדוּאִינו
 fork of littlewire AVR based Vusb dev board and various other efforts around the ATtiny85 <br>
 more at http://telavivmakers.org/ATtami<br>
 and here http://mcu.soup.io<br>
-<br>
-<img src="http://i.imgur.com/BwpIorR.jpg" alt="ATtami board (ver 16)">
+
+###Schematics> 
+[current PDF](https://github.com/telavivmakers/at-tami/raw/master/ATTAMI-V0.00.sch.pdf)
+
+###board layout> 
+<img src="http://i.imgur.com/USDaUxM.jpg" alt="ATtami board (ver 1.1)"><img src="http://i.imgur.com/4646Ll3.png?2" alt="ATtami board (ver 1.1) backside">
+
