@@ -28,8 +28,8 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -241,28 +241,6 @@
 <text x="-4.6228" y="-5.2578" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="5.08" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
-<package name="SOT23-5">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.4294" x2="1.4224" y2="-0.4294" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.4294" x2="-1.4224" y2="0.4294" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
-<wire x1="-0.2684" y1="0.8104" x2="0.2684" y2="0.8104" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
-<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
-<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<text x="-0.889" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
-</package>
 <package name="SOD-323">
 <description>&lt;b&gt;SOD323&lt;/b&gt; (2.5x1.2mm)</description>
 <smd name="CQ" x="-2.159" y="0" dx="2.1844" dy="1.0668" layer="1"/>
@@ -360,6 +338,26 @@
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="SOT-223">
+<wire x1="3.277" y1="1.778" x2="3.277" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="3.277" y1="-1.778" x2="-3.277" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="-3.277" y1="-1.778" x2="-3.277" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="-3.277" y1="1.778" x2="3.277" y2="1.778" width="0.1524" layer="21"/>
+<smd name="1" x="-2.3" y="-3.15" dx="1.5" dy="2" layer="1"/>
+<smd name="2" x="0" y="-3.15" dx="1.5" dy="2" layer="1"/>
+<smd name="3" x="2.3" y="-3.15" dx="1.5" dy="2" layer="1"/>
+<smd name="4" x="0" y="3.15" dx="3.8" dy="2" layer="1"/>
+<text x="-3.4925" y="4.7625" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-6.0325" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.9271" y1="1.1303" x2="0.9271" y2="4.3307" layer="51" rot="R270"/>
+<rectangle x1="-0.9271" y1="-3.1623" x2="0.9271" y2="-2.2987" layer="51" rot="R270"/>
+<rectangle x1="-3.2385" y1="-3.1623" x2="-1.3843" y2="-2.2987" layer="51" rot="R270"/>
+<rectangle x1="1.3843" y1="-3.1623" x2="3.2385" y2="-2.2987" layer="51" rot="R270"/>
+<rectangle x1="-0.9271" y1="1.1303" x2="0.9271" y2="4.3307" layer="21" rot="R270"/>
+<rectangle x1="-0.9271" y1="-3.1623" x2="0.9271" y2="-2.2987" layer="21" rot="R270"/>
+<rectangle x1="-3.2385" y1="-3.1623" x2="-1.3843" y2="-2.2987" layer="21" rot="R270"/>
+<rectangle x1="1.3843" y1="-3.1623" x2="3.2385" y2="-2.2987" layer="21" rot="R270"/>
+</package>
 <package name="SOT89">
 <wire x1="2.2724" y1="1.6104" x2="2.2724" y2="-1.1104" width="0.1778" layer="51"/>
 <wire x1="2.2724" y1="-1.1104" x2="-2.2724" y2="-1.1104" width="0.1778" layer="51"/>
@@ -425,19 +423,6 @@
 <wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.4064" layer="94"/>
 <text x="-5.8928" y="9.906" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4036" y="-19.939" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-</symbol>
-<symbol name="V-REG-LDO">
-<wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="-7.62" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
-<text x="-7.62" y="9.144" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-11.43" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="IN" x="-10.16" y="5.08" visible="pin" length="short" direction="in"/>
-<pin name="GND" x="-10.16" y="0" visible="pin" length="short" direction="in"/>
-<pin name="OUT" x="7.62" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
-<pin name="EN" x="-10.16" y="-5.08" visible="pin" length="short" direction="in"/>
-<pin name="BP" x="7.62" y="-5.08" visible="pin" length="short" direction="in" rot="R180"/>
 </symbol>
 <symbol name="DIODE">
 <wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
@@ -639,27 +624,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="V_REG_LDO" prefix="U">
-<description>&lt;b&gt;Voltage Regulator LDO&lt;/b&gt;
-Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (by-pass) pin is used to lower output noise with 470pF cap.</description>
-<gates>
-<gate name="G$1" symbol="V-REG-LDO" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="SOT23-5">
-<connects>
-<connect gate="G$1" pin="BP" pad="4"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SCHOTTKY-DIODE" prefix="D" uservalue="yes">
 <description>Schottky Diode</description>
 <gates>
@@ -851,11 +815,21 @@ With round pins</description>
 <gate name="1" symbol="XXX1117" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT89">
+<device name="SOT-89" package="SOT89">
 <connects>
 <connect gate="1" pin="GND" pad="GND"/>
 <connect gate="1" pin="IN" pad="VIN"/>
 <connect gate="1" pin="OUT" pad="VOUT@1 VOUT@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT-232" package="SOT-223">
+<connects>
+<connect gate="1" pin="GND" pad="1"/>
+<connect gate="1" pin="IN" pad="3"/>
+<connect gate="1" pin="OUT" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1021,7 +995,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D4" library="ATtami" deviceset="LED" device="-0805" value="Red LED"/>
 <part name="R2" library="ATtami" deviceset="RESISTOR" device="0805-RES" value="1K5"/>
 <part name="GND12" library="ATtami" deviceset="GND" device=""/>
-<part name="U1" library="ATtami" deviceset="V_REG_LDO" device="SMD" value="MIC5225"/>
 <part name="U$1" library="ATtami" deviceset="MOUNTINGHOLE" device="2.0" value="MOUNTINGHOLE2.0"/>
 <part name="S1" library="ATtami" deviceset="SWITCH-MOMENTARY-2" device="-SMD-1101NE"/>
 <part name="USB" library="ATtami" deviceset="MICRO-USB_ALIEXPRESS" device=""/>
@@ -1032,12 +1005,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FRAME1" library="ATtami" deviceset="A4L-LOC" device=""/>
 <part name="J1" library="ATtami" deviceset="HEADER-1X7" device="ROUND"/>
 <part name="GND5" library="ATtami" deviceset="GND" device=""/>
-<part name="D5" library="ATtami" deviceset="SCHOTTKY-DIODE" device="SOD-323" value="Schottky"/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device=""/>
-<part name="COIN_CELL_(+)" library="ATtami" deviceset="PINHD-1X1" device=""/>
 <part name="COIN_CELL_(-)" library="ATtami" deviceset="PINHD-1X1" device=""/>
 <part name="U2" library="ATtami" deviceset="ATTINY85-20SU" device=""/>
-<part name="U3" library="ATtami" deviceset="XXX1117" device="" value="1117"/>
+<part name="U3" library="ATtami" deviceset="XXX1117" device="SOT-232" value="1117"/>
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="_SMALL"/>
 <part name="GND7" library="ATtami" deviceset="GND" device=""/>
 </parts>
@@ -1046,7 +1017,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <plain>
 <text x="35.56" y="35.56" size="1.778" layer="100">Notes: 
 
-1. Assemble either U1 or U3. (!!! never both of them !!!)
+1. profit!!
 2. Cut jumper SJ1 in order to save battery energy.
 3. Switch possition of midi jumper and dissable the RESET function in order to use PB5 as DP USB signal.
 4. D1 and D2 are Blue LEDs their forward voltage is 3.2V. They might  not light when using  coin cell or low Vi_BAT.
@@ -1092,8 +1063,7 @@ LICENSE: CERN OHL 1.7</text>
 <text x="20.574" y="116.332" size="1.778" layer="91">V_BAT (input)</text>
 <text x="212.344" y="93.218" size="1.778" layer="91" rot="R270">Reset</text>
 <text x="193.802" y="92.71" size="1.778" layer="91">midi jumper</text>
-<text x="75.438" y="143.51" size="1.778" layer="91">* See Note 1</text>
-<text x="74.676" y="121.158" size="1.778" layer="91">* See Note 1</text>
+<text x="76.2" y="165.1" size="1.778" layer="91">this is/was coincell +</text>
 </plain>
 <instances>
 <instance part="R3" gate="G$1" x="142.24" y="78.74" smashed="yes">
@@ -1136,10 +1106,6 @@ LICENSE: CERN OHL 1.7</text>
 <attribute name="VALUE" x="129.54" y="109.982" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND12" gate="1" x="144.78" y="88.9" rot="R90"/>
-<instance part="U1" gate="G$1" x="78.74" y="111.76" smashed="yes">
-<attribute name="NAME" x="71.12" y="120.904" size="1.778" layer="95"/>
-<attribute name="VALUE" x="68.58" y="100.33" size="1.778" layer="96"/>
-</instance>
 <instance part="U$1" gate="G$1" x="228.6" y="165.1"/>
 <instance part="S1" gate="G$1" x="210.82" y="96.52" smashed="yes" rot="R270"/>
 <instance part="USB" gate="G$1" x="50.8" y="76.2" smashed="yes">
@@ -1153,16 +1119,8 @@ LICENSE: CERN OHL 1.7</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="J1" gate="A" x="231.14" y="111.76"/>
 <instance part="GND5" gate="1" x="220.98" y="127" rot="R180"/>
-<instance part="D5" gate="G$1" x="63.5" y="165.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="61.976" y="168.148" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="68.072" y="163.068" size="1.27" layer="96" rot="R180"/>
-</instance>
 <instance part="SJ1" gate="G$1" x="134.62" y="88.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="137.16" y="92.71" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="COIN_CELL_(+)" gate="G$1" x="81.28" y="165.1" smashed="yes">
-<attribute name="NAME" x="83.82" y="164.719" size="1.778" layer="95"/>
-<attribute name="VALUE" x="74.93" y="160.02" size="1.778" layer="96"/>
 </instance>
 <instance part="COIN_CELL_(-)" gate="G$1" x="81.28" y="154.94" smashed="yes">
 <attribute name="NAME" x="83.312" y="155.321" size="1.778" layer="95"/>
@@ -1172,13 +1130,13 @@ LICENSE: CERN OHL 1.7</text>
 <attribute name="NAME" x="150.3172" y="123.19" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="159.1564" y="94.361" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="U3" gate="1" x="76.2" y="139.7" smashed="yes">
-<attribute name="NAME" x="71.12" y="143.256" size="1.778" layer="95"/>
-<attribute name="VALUE" x="69.596" y="131.826" size="1.778" layer="96"/>
+<instance part="U3" gate="1" x="78.74" y="116.84" smashed="yes">
+<attribute name="NAME" x="73.66" y="120.396" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.136" y="108.966" size="1.778" layer="96"/>
 </instance>
 <instance part="SJ2" gate="G$1" x="193.04" y="96.52" smashed="yes" rot="MR90"/>
-<instance part="GND7" gate="1" x="76.2" y="127" smashed="yes">
-<attribute name="VALUE" x="73.66" y="124.46" size="1.778" layer="96"/>
+<instance part="GND7" gate="1" x="78.74" y="104.14" smashed="yes">
+<attribute name="VALUE" x="76.2" y="101.6" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1233,9 +1191,6 @@ LICENSE: CERN OHL 1.7</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="101.6" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="91.44" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
-<wire x1="66.04" y1="111.76" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="114.3" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
@@ -1267,7 +1222,7 @@ LICENSE: CERN OHL 1.7</text>
 <segment>
 <pinref part="U3" gate="1" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="76.2" y1="132.08" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="109.22" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB3" class="0">
@@ -1325,22 +1280,13 @@ LICENSE: CERN OHL 1.7</text>
 <net name="V_BAT" class="0">
 <segment>
 <pinref part="U3" gate="1" pin="IN"/>
-<wire x1="68.58" y1="139.7" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="IN"/>
-<wire x1="63.5" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
-<junction x="63.5" y="116.84"/>
-<pinref part="U1" gate="G$1" pin="EN"/>
-<wire x1="68.58" y1="106.68" x2="63.5" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="106.68" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="109.22" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="116.84" x2="71.12" y2="116.84" width="0.1524" layer="91"/>
 <junction x="50.8" y="116.84"/>
 <wire x1="50.8" y1="116.84" x2="40.64" y2="116.84" width="0.1524" layer="91"/>
 <label x="51.816" y="117.856" size="1.778" layer="95"/>
-<junction x="63.5" y="116.84"/>
-<wire x1="63.5" y1="116.84" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -1372,23 +1318,19 @@ LICENSE: CERN OHL 1.7</text>
 <wire x1="127" y1="116.84" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="127" y1="111.76" x2="127" y2="116.84" width="0.1524" layer="91"/>
 <junction x="127" y="116.84"/>
-<pinref part="U1" gate="G$1" pin="OUT"/>
 <wire x1="106.68" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="VCC"/>
 <junction x="144.78" y="116.84"/>
 <pinref part="U3" gate="1" pin="OUT"/>
-<wire x1="93.98" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="139.7" x2="93.98" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="139.7" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 <junction x="93.98" y="116.84"/>
 </segment>
 <segment>
-<pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="60.96" y1="165.1" x2="55.88" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="165.1" x2="55.88" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="160.02" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
 <label x="46.228" y="160.528" size="1.778" layer="95"/>
+<wire x1="55.88" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB1" class="0">
@@ -1411,13 +1353,6 @@ LICENSE: CERN OHL 1.7</text>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="60.96" y1="81.28" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="81.28" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="D5" gate="G$1" pin="A"/>
-<pinref part="COIN_CELL_(+)" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
