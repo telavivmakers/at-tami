@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -333,11 +333,6 @@
 <text x="-3" y="2" size="0.762" layer="25">&gt;NAME</text>
 <text x="-3" y="-2.7" size="0.762" layer="27">&gt;VALUE</text>
 </package>
-<package name="1X01-CLEANBIG">
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.778"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="SOT-223">
 <wire x1="3.277" y1="1.778" x2="3.277" y2="-1.778" width="0.1524" layer="21"/>
 <wire x1="3.277" y1="-1.778" x2="-3.277" y2="-1.778" width="0.1524" layer="21"/>
@@ -551,15 +546,6 @@
 <text x="230.505" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
 <text x="216.916" y="4.953" size="2.54" layer="94" font="vector">Sheet:</text>
 <frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
-</symbol>
-<symbol name="PINHD1">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 <symbol name="XXX1117">
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
@@ -791,24 +777,6 @@ DIN A4, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHD-1X1" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;Pin header 1x1 for 0.1" spacing&lt;/b&gt;
-&lt;p&gt;
-With round pins</description>
-<gates>
-<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X01-CLEANBIG">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="XXX1117" prefix="IC" uservalue="yes">
 <description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
 <gates>
@@ -987,7 +955,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C2" library="ATtami" deviceset="CAP" device="0805" value="2.2uf/16V"/>
 <part name="D1" library="ATtami" deviceset="LED" device="-0805" value="Blue LED"/>
 <part name="D2" library="ATtami" deviceset="LED" device="-0805" value="Blue LED"/>
-<part name="GND16" library="ATtami" deviceset="GND" device=""/>
 <part name="GND13" library="ATtami" deviceset="GND" device=""/>
 <part name="GND1" library="ATtami" deviceset="GND" device=""/>
 <part name="GND6" library="ATtami" deviceset="GND" device=""/>
@@ -1006,7 +973,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J1" library="ATtami" deviceset="HEADER-1X7" device="ROUND"/>
 <part name="GND5" library="ATtami" deviceset="GND" device=""/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device=""/>
-<part name="COIN_CELL_(-)" library="ATtami" deviceset="PINHD-1X1" device=""/>
 <part name="U2" library="ATtami" deviceset="ATTINY85-20SU" device=""/>
 <part name="U3" library="ATtami" deviceset="XXX1117" device="SOT-232" value="1117"/>
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="_SMALL"/>
@@ -1059,11 +1025,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </polygon>
 <text x="165.1" y="12.7" size="2.54" layer="100" font="vector">T.A.M.I hackerspace crew 
 LICENSE: CERN OHL 1.7</text>
-<text x="19.304" y="159.512" size="1.778" layer="91">VCC (output)</text>
+<text x="21.844" y="139.192" size="1.778" layer="91">VCC (output)</text>
 <text x="20.574" y="116.332" size="1.778" layer="91">V_BAT (input)</text>
 <text x="212.344" y="93.218" size="1.778" layer="91" rot="R270">Reset</text>
 <text x="193.802" y="92.71" size="1.778" layer="91">midi jumper</text>
-<text x="76.2" y="165.1" size="1.778" layer="91">this is/was coincell +</text>
 </plain>
 <instances>
 <instance part="R3" gate="G$1" x="142.24" y="78.74" smashed="yes">
@@ -1087,7 +1052,6 @@ LICENSE: CERN OHL 1.7</text>
 </instance>
 <instance part="D1" gate="LED" x="106.68" y="66.04"/>
 <instance part="D2" gate="LED" x="119.38" y="66.04"/>
-<instance part="GND16" gate="1" x="48.26" y="152.4"/>
 <instance part="GND13" gate="1" x="210.82" y="86.36"/>
 <instance part="GND1" gate="1" x="43.18" y="104.14"/>
 <instance part="GND6" gate="1" x="66.04" y="88.9" smashed="yes">
@@ -1115,16 +1079,12 @@ LICENSE: CERN OHL 1.7</text>
 <instance part="GND4" gate="1" x="60.96" y="66.04"/>
 <instance part="U$2" gate="G$1" x="241.3" y="165.1"/>
 <instance part="J2" gate="G$1" x="38.1" y="114.3" rot="MR0"/>
-<instance part="J3" gate="G$1" x="35.56" y="157.48" rot="MR0"/>
+<instance part="J3" gate="G$1" x="38.1" y="137.16" rot="MR0"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="J1" gate="A" x="231.14" y="111.76"/>
 <instance part="GND5" gate="1" x="220.98" y="127" rot="R180"/>
 <instance part="SJ1" gate="G$1" x="134.62" y="88.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="137.16" y="92.71" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="COIN_CELL_(-)" gate="G$1" x="81.28" y="154.94" smashed="yes">
-<attribute name="NAME" x="83.312" y="155.321" size="1.778" layer="95"/>
-<attribute name="VALUE" x="74.93" y="149.86" size="1.778" layer="96"/>
 </instance>
 <instance part="U2" gate="A" x="162.56" y="114.3" smashed="yes">
 <attribute name="NAME" x="150.3172" y="123.19" size="2.0828" layer="95" ratio="10" rot="SR0"/>
@@ -1172,17 +1132,6 @@ LICENSE: CERN OHL 1.7</text>
 <pinref part="U2" gate="A" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="48.26" y1="157.48" x2="48.26" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="154.94" x2="55.88" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="157.48" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
-<junction x="48.26" y="157.48"/>
-<pinref part="COIN_CELL_(-)" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="101.6" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
@@ -1223,6 +1172,10 @@ LICENSE: CERN OHL 1.7</text>
 <pinref part="U3" gate="1" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="78.74" y1="109.22" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="137.16" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB3" class="0">
@@ -1326,11 +1279,8 @@ LICENSE: CERN OHL 1.7</text>
 <junction x="93.98" y="116.84"/>
 </segment>
 <segment>
-<wire x1="55.88" y1="165.1" x2="55.88" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="160.02" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
-<label x="46.228" y="160.528" size="1.778" layer="95"/>
-<wire x1="55.88" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="139.7" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB1" class="0">
