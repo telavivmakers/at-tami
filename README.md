@@ -11,5 +11,7 @@ and here http://mcu.soup.io<br>
 [current PDF](https://github.com/telavivmakers/at-tami/raw/master/ATTAMI-V0.00.sch.pdf)
 
 ###board layout> 
-<img src="http://i.imgur.com/USDaUxM.jpg" alt="ATtami board (ver 1.1)"><img src="http://i.imgur.com/4646Ll3.png?2" alt="ATtami board (ver 1.1) backside">
+
+<img src="http://i.imgur.com/4646Ll3.png?2" alt="ATtami board (ver 2.1) backside">
+<img src="http://i.imgur.com/UurQ23O.png" alt="ATtami board (ver 2.1)">  
 
