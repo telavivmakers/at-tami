@@ -13,5 +13,5 @@ and here http://mcu.soup.io<br>
 ###board layout> 
 
 <img src="http://i.imgur.com/4646Ll3.png?2" alt="ATtami board (ver 2.1) backside">
-<img src="http://i.imgur.com/UurQ23O.png" alt="ATtami board (ver 2.1)">  
+<img src="http://i.imgur.com/6FbeK98.png" alt="ATtami board (ver 2.1)">  
 
