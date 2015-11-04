@@ -5,6 +5,8 @@
 //  ADC2,  PB4,	3|             |6	PB1,
 //  GND       	4|             |5	PB0,
 //              		 +---------+
+// http://telavivmakers.org/index.php/TinyWall
+// https://github.com/telavivmakers/at-tami/tree/master/shields/ir-shield
 
 #define my_milisec  76 // 76 interrupts equal 1 mili-sec (approximatly)
 #define interval  100 //100 mili-sec interval between repetetive code transmitions
