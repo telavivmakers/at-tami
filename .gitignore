@@ -36,3 +36,5 @@ eagle.epf
 **/*.eps
 **/*.pro
 **/*.job
+
+*.scr
