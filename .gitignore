@@ -34,7 +34,8 @@ eagle.epf
 **/*.info
 
 **/*.eps
-**/*.pro
+#needed for kicad
+#**/*.pro
 **/*.job
 
 *.scr
