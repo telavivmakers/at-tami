@@ -1,0 +1,10 @@
+ERC report (8/24/2016 10:19:02 PM, Encoding UTF8 )
+
+***** Sheet /
+ErrType(4): Conflict problem between pins. Severity: warning
+    @ (86.36 mm,80.01 mm): Pin 4 (Power output) of component U1 is connected to 
+    @ (86.36 mm,80.01 mm): pin 2 (Power output) of component U1 (net 5).
+ErrType(3): Pin connected to some others pins but no pin to drive it
+    @ (71.12 mm,80.01 mm): Pin 3 (Power input) of component U1 is not driven (Net 18).
+
+ ** ERC messages: 2  Errors 0  Warnings 2
